@@ -13,6 +13,9 @@ set PATH=C:\Program Files\CMake\bin;C:\Program Files\7-Zip;C:\ProgramData\chocol
 :: log sizes are too long, but leaving this here incase someone wants to use it locally
 :: set CMAKE_VERBOSE_MAKEFILE=1
 
+set USE_CUDA=1
+set CUDA_VERSION=11.7
+set BUILD_ENVIRONMENT=
 
 set INSTALLER_DIR=%SCRIPT_HELPERS_DIR%\installation-helpers
 
@@ -42,11 +45,7 @@ if not errorlevel 0 exit /b
 
 :: Override VS env here
 pushd .
-if "%VC_VERSION%" == "" (
-    call "C:\Program Files (x86)\Microsoft Visual Studio\%VC_YEAR%\%VC_PRODUCT%\VC\Auxiliary\Build\vcvarsall.bat" x64
-) else (
-    call "C:\Program Files (x86)\Microsoft Visual Studio\%VC_YEAR%\%VC_PRODUCT%\VC\Auxiliary\Build\vcvarsall.bat" x64 -vcvars_ver=%VC_VERSION%
-)
+call "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" x64
 if errorlevel 1 exit /b
 if not errorlevel 0 exit /b
 @echo on
@@ -124,7 +123,7 @@ for /f "usebackq tokens=*" %%i in (`set`) do echo set "%%i" >> %TMP_DIR_WIN%\ci_
 @echo on
 
 if "%REBUILD%" == "" (
-  if NOT "%BUILD_ENVIRONMENT%" == "" (
+  if not "%BUILD_ENVIRONMENT%" == "" (
     :: Create a shortcut to restore pytorch environment
     echo @echo off >> %TMP_DIR_WIN%/ci_scripts/pytorch_env_restore_helper.bat
     echo call "%TMP_DIR_WIN%/ci_scripts/pytorch_env_restore.bat" >> %TMP_DIR_WIN%/ci_scripts/pytorch_env_restore_helper.bat
@@ -136,14 +135,14 @@ if "%REBUILD%" == "" (
   )
 )
 :: tests if BUILD_ENVIRONMENT contains cuda11 as a substring
-if not x%BUILD_ENVIRONMENT:cuda11=%==x%BUILD_ENVIRONMENT% (
-   set BUILD_SPLIT_CUDA=ON
-)
+::if not x%BUILD_ENVIRONMENT:cuda11=%==x%BUILD_ENVIRONMENT% (
+::  set BUILD_SPLIT_CUDA=ON
+::)
 
 python setup.py bdist_wheel && sccache --show-stats && python -c "import os, glob; os.system('python -mpip install ' + glob.glob('dist/*.whl')[0] + '[opt-einsum]')" (
   if "%BUILD_ENVIRONMENT%"=="" (
     echo NOTE: To run `import torch`, please make sure to activate the conda environment by running `call %CONDA_PARENT_DIR%\Miniconda3\Scripts\activate.bat %CONDA_PARENT_DIR%\Miniconda3` in Command Prompt before running Git Bash.
-  ) else (
+) else (
     7z a %TMP_DIR_WIN%\%IMAGE_COMMIT_TAG%.7z %CONDA_PARENT_DIR%\Miniconda3\Lib\site-packages\torch %CONDA_PARENT_DIR%\Miniconda3\Lib\site-packages\torchgen %CONDA_PARENT_DIR%\Miniconda3\Lib\site-packages\caffe2 %CONDA_PARENT_DIR%\Miniconda3\Lib\site-packages\functorch && copy /Y "%TMP_DIR_WIN%\%IMAGE_COMMIT_TAG%.7z" "%PYTORCH_FINAL_PACKAGE_DIR%\"
     if errorlevel 1 exit /b
     if not errorlevel 0 exit /b
