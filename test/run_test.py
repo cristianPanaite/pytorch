@@ -913,14 +913,16 @@ def get_pytest_args(options, stepcurrent_key, is_cpp_test=False):
             rerun_options.append(f"--sc={stepcurrent_key}")
 
     pytest_args = [
-        "-vv",
-        "-rfEX",
+        "-vvvv",
+        "-rfEsxXP",
         "-p",
         "no:xdist",
     ]
     if not is_cpp_test:
         # C++ tests need to be run with pytest directly, not via python
         pytest_args.append("--use-pytest")
+        if options.save_xml:
+            pytest_args.extend(["--save-xml"])
     else:
         # NB: Use --junit-xml to generate the C++ test report for now in
         # pytest format. Note that this format is different than the one
