@@ -923,6 +923,8 @@ def get_pytest_args(options, stepcurrent_key, is_cpp_test=False):
         pytest_args.append("--use-pytest")
         if options.save_xml:
             pytest_args.extend(["--save-xml"])
+        if options.filter:
+            pytest_args.extend(["-k", options.filter])
     else:
         # NB: Use --junit-xml to generate the C++ test report for now in
         # pytest format. Note that this format is different than the one
@@ -1068,6 +1070,10 @@ def parse_args():
         metavar="TESTS",
         default=[],
         help="select a set of tests to exclude",
+    )
+    parser.add_argument(
+        "--filter",
+        help="PyTest filter to apply to the test suite. "
     )
     parser.add_argument(
         "-f",
