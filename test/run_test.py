@@ -898,7 +898,9 @@ def print_log_file(test: str, file_path: str, failed: bool) -> None:
 
 
 def get_pytest_args(options, stepcurrent_key, is_cpp_test=False):
-    if RERUN_DISABLED_TESTS:
+    if int(options.runs) > 1:
+        rerun_options = ["--flake-finder", f"--flake-runs={options.runs}"]
+    elif RERUN_DISABLED_TESTS:
         # When under rerun-disabled-tests mode, run the same tests multiple times to determine their
         # flakiness status. Default to 50 re-runs
         rerun_options = ["--flake-finder", "--flake-runs=50"]
@@ -1073,7 +1075,11 @@ def parse_args():
     )
     parser.add_argument(
         "--filter",
-        help="PyTest filter to apply to the test suite. "
+        help="PyTest filter to apply to the test suite."
+    )
+    parser.add_argument(
+        "--runs",
+        help="Run the tests the specified number of times. "
     )
     parser.add_argument(
         "-f",
