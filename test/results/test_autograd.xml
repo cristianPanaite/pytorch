@@ -1,0 +1,838 @@
+<testsuites>
+  <testsuite name="pytest" errors="0" failures="0" skipped="30" tests="575" time="35.993" timestamp="2023-05-05T09:08:01.049993" hostname="BartonTest">
+    <testcase classname="TestAutograd" name="test_access_saved_tensor_twice_without_recomputation_works" time="0.019" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_accumulate_grad" time="0.004" file="test_autograd.py">
+      <system-err>C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\torch\autograd\__init__.py:204: UserWarning: Using backward() with create_graph=True will create a reference cycle between the parameter and its gradient which can cause a memory leak. We recommend using autograd.grad when creating the graph to avoid this. If you have to use this function, make sure to reset the .grad fields of your parameters to None after use to break the cycle and avoid the leak. (Triggered internally at C:\Users\radekbarton\Projects\pytorch\torch\csrc\autograd\engine.cpp:1150.)
+  Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+      </system-err>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_accumulate_grad_posthooks_can_observe_tensor_prehook" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_accumulate_grad_tensor_reference" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_accumulate_grad_with_zero_numel_grad" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_anomaly_assign_parent_cleanup" time="0.003" file="test_autograd.py">
+      <system-err>C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:4445: UserWarning: Anomaly Detection has been enabled. This mode will increase the runtime and should only be enabled for debugging.
+  with detect_anomaly():
+      </system-err>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_anomaly_detect_nan" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_anomaly_grad_warnings" time="0.335" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_anomaly_mode_no_check_nan" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_attribute_deletion" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_autograd_inplace_view_of_view" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_autograd_inplace_views_creation_meta" time="0.037" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_autograd_inplace_views_cross_dtype" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_autograd_multiple_views_python" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_autograd_node_isinstance" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_autograd_python_custom_function_inplace" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_autograd_simple_views_python" time="0.105" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_autograd_views_codegen" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_backward" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_backward_badcalls" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_backward_copy" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_backward_create_graph_warns" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_backward_no_grad" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_backward_twice_retained_graph_with_saved_values" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_backward_twice_retained_graph_without_saved_values" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_backward_twice_with_saved_values" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_backward_twice_without_saved_values" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_backward_with_inputs" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_backward_with_nonleaf_inputs" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_calculate_shape_util" time="0.002" file="test_autograd.py">
+      <system-err>C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\torch\nested\__init__.py:58: UserWarning: The PyTorch API of nested tensors is in prototype stage and will change in the near future. (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\NestedTensorImpl.cpp:180.)
+  return torch._nested_tensor_from_tensor_list(tensor_list, dtype, None, device, None)
+      </system-err>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_callback_adds_callback" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_cant_create_saved_tensors" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_checkpoint_valid_reset_on_error" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_checkpoint_warns_if_use_reentrant_not_passed_explcitly" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_checkpointing" time="0.002" file="test_autograd.py">
+      <skipped type="pytest.skip" message="test is slow; run with PYTORCH_TEST_WITH_SLOW to enable test">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:5426: test is slow; run with PYTORCH_TEST_WITH_SLOW to enable test</skipped>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_checkpointing_non_reentrant_autocast_cpu" time="0.007" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_checkpointing_non_reentrant_autocast_gpu" time="0.001" file="test_autograd.py">
+      <skipped type="pytest.skip" message="Test requires CUDA bf16 support">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:5489: Test requires CUDA bf16 support</skipped>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_checkpointing_without_reentrant_arbitrary_input_output" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_checkpointing_without_reentrant_correct_grad" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_checkpointing_without_reentrant_custom_function_works" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_checkpointing_without_reentrant_dataparallel" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_checkpointing_without_reentrant_detached_tensor_use_reentrant_False" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_checkpointing_without_reentrant_detached_tensor_use_reentrant_True" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_checkpointing_without_reentrant_input_requires_grad_False" time="0.003" file="test_autograd.py">
+      <skipped type="pytest.skip" message="test is slow; run with PYTORCH_TEST_WITH_SLOW to enable test">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:5673: test is slow; run with PYTORCH_TEST_WITH_SLOW to enable test</skipped>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_checkpointing_without_reentrant_input_requires_grad_True" time="0.002" file="test_autograd.py">
+      <skipped type="pytest.skip" message="test is slow; run with PYTORCH_TEST_WITH_SLOW to enable test">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:5673: test is slow; run with PYTORCH_TEST_WITH_SLOW to enable test</skipped>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_checkpointing_without_reentrant_memory_savings" time="0.002" file="test_autograd.py">
+      <skipped type="pytest.skip" message="Test requires CUDA">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:5500: Test requires CUDA</skipped>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_checkpointing_without_reentrant_parameter_used_in_an_out" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_checkpointing_without_reentrant_with_context_fn" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_copy_slices_graph_task_updates" time="0.007" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_create_graph_and_full_backward_hook_cycle" time="0.453" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_current_graph_task_execution_order" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_current_graph_task_id" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_current_node" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_custom_autograd_no_early_free" time="0.014" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_custom_autograd_repeated_grad_grad" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_custom_function_cycle" time="0.173" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_custom_function_error" time="0.124" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_custom_function_exception" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_custom_function_forward_mode_forward_is_no_op" time="0.016" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_custom_function_forward_mode_inplace_checks" time="0.009" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_custom_function_forward_mode_non_differentiable" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_custom_function_forward_mode_non_tensor_before_tensor_args" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_custom_function_forward_mode_view_checks" time="0.013" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_custom_function_forward_mode_wrong_formula" time="0.014" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_custom_function_local_inplace" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_custom_function_mark_dirty_not_differentiable" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_custom_function_no_tensors" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_custom_function_non_tensor_inputs_outputs" time="0.016" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_custom_function_return_view_in_nograd" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_custom_function_save_for_forward" time="0.012" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_custom_function_saved_tensors" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_custom_function_setup_context_multi_input" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_custom_function_setup_context_multi_output" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_custom_function_setup_context_simple" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_custom_function_vmap_defaults" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_deep_reentrant" time="0.412" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_default_saved_variable_hooks_double_backward" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_dep_nograd" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_dependent_backward" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_detach" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_detach_base" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_detach_then_inplace_raises_in_autograd" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_diagonal_expanded_v" time="0.002" file="test_autograd.py">
+      <system-err>C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:2811: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  v_expanded = torch.tensor(value).expand(10)
+      </system-err>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_dir" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_disabling_saved_tensor_hooks" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_disabling_saved_tensor_hooks_nested" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_dont_materialize_grads" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_duplicate_backward_root" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_first_grad_fn_access_in_no_grad_mode" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_free_deep_graph" time="4.960" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_free_deep_graph_complicated" time="3.608" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_free_deep_graph_pyfunction" time="4.400" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_full_backward_hook_double_backward" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_function" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_function_returns_input" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_function_returns_undefined_tensor" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_gc_in_destructor" time="0.665" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_grad" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_grad_badcalls" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_grad_batched_grad" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_grad_empty_inputs" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_grad_fn_attr_bindings" time="0.009" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_grad_fn_badcalls" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_grad_fn_prehooks" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_grad_fn_prehooks_multiple_outputs" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_grad_fn_prehooks_remove_hooks" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_grad_materialize_grads" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_grad_mode_class_decoration" time="0.007" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_grad_mode_restored_reentrant" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_grad_nonleaf" time="0.007" file="test_autograd.py">
+      <system-err>C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:797: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at C:\Users\radekbarton\Projects\pytorch\build\aten\src\ATen/core/TensorBody.h:491.)
+  self.assertIsNone(x.grad)
+      </system-err>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_grad_nonleaf_many_outputs" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_grad_nonleaf_register_hook" time="0.006" file="test_autograd.py">
+      <system-err>C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:849: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at C:\Users\radekbarton\Projects\pytorch\build\aten\src\ATen/core/TensorBody.h:491.)
+  self.assertIsNone(x_list[0].grad)
+C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:856: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at C:\Users\radekbarton\Projects\pytorch\build\aten\src\ATen/core/TensorBody.h:491.)
+  self.assertIsNone(x_list[i].grad)
+      </system-err>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_grad_unreachable" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_grad_unreachable_discovery" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_gradcheck_backward_mul_by_grad_output" time="0.054" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_gradcheck_check_batched_grad" time="0.040" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_gradcheck_check_forward_or_backward_only" time="0.039" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_gradcheck_check_no_differentiable_outputs" time="0.008" file="test_autograd.py">
+      <system-err>C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\torch\autograd\gradcheck.py:735: UserWarning: Input #0 requires gradient and is not a double precision floating point or complex. This check will likely fail if all the inputs are not of double precision floating point or complex. 
+  warnings.warn(
+      </system-err>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_gradcheck_complex_non_complex_outputs" time="0.023" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_gradcheck_custom_error" time="0.038" file="test_autograd.py">
+      <system-err>C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\torch\autograd\gradcheck.py:735: UserWarning: Input #0 requires gradient and is not a double precision floating point or complex. This check will likely fail if all the inputs are not of double precision floating point or complex. 
+  warnings.warn(
+      </system-err>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_gradcheck_dense_and_sparse_inputs" time="0.012" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_gradcheck_forward_ad" time="0.210" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_gradcheck_forward_ad_batched_grad" time="0.010" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_gradcheck_forward_ad_respects_requires_grad" time="0.012" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_gradcheck_forward_ad_runs_with_no_requires_grad" time="0.011" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_gradcheck_get_analytical_jacobian" time="0.015" file="test_autograd.py">
+      <system-err>C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\torch\autograd\gradcheck.py:665: UserWarning: get_analytical_jacobian was part of PyTorch's private API and not meant to be exposed. We are deprecating it and it will be removed in a future version of PyTorch. If you have a specific use for this or feature request for this to be a stable API, please file us an issue at https://github.com/pytorch/pytorch/issues/new
+  warnings.warn("get_analytical_jacobian was part of PyTorch's private API and not "
+      </system-err>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_gradcheck_get_numerical_jacobian" time="0.014" file="test_autograd.py">
+      <system-err>C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\torch\autograd\gradcheck.py:245: UserWarning: get_numerical_jacobian was part of PyTorch's private API and not meant to be exposed. We are deprecating it and it will be removed in a future version of PyTorch. If you have a specific use for this or feature request for this to be a stable API, please file us an issue at https://github.com/pytorch/pytorch/issues/new
+  warnings.warn("get_numerical_jacobian was part of PyTorch's private API and not "
+      </system-err>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_gradcheck_input_layout_torch_sparse_bsc" time="0.028" file="test_autograd.py">
+      <system-err>C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:4688: UserWarning: Sparse BSC tensor support is in beta state. If you miss a functionality in the sparse tensor support, please submit a feature request to https://github.com/pytorch/pytorch/issues. (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\SparseCsrTensorImpl.cpp:55.)
+  gradcheck(fn, torch.rand(size, dtype=torch.double).to_sparse(layout=layout, blocksize=blocksize).requires_grad_(),
+      </system-err>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_gradcheck_input_layout_torch_sparse_bsr" time="0.037" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_gradcheck_input_layout_torch_sparse_coo" time="0.016" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_gradcheck_input_layout_torch_sparse_csc" time="0.022" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_gradcheck_input_layout_torch_sparse_csr" time="0.014" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_gradcheck_jacobian_mismatch" time="0.118" file="test_autograd.py">
+      <system-err>C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\torch\autograd\gradcheck.py:735: UserWarning: Input #0 requires gradient and is not a double precision floating point or complex. This check will likely fail if all the inputs are not of double precision floating point or complex. 
+  warnings.warn(
+      </system-err>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_gradcheck_multiple_mkldnn_inputs" time="0.001" file="test_autograd.py">
+      <skipped type="pytest.skip" message="MKL-DNN build is disabled">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:4924: MKL-DNN build is disabled</skipped>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_gradcheck_nondeterministic" time="0.148" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_gradcheck_output_shape_or_dtype_depend_on_values" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_gradcheck_single_input" time="0.024" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_gradcheck_test_outputs" time="0.001" file="test_autograd.py">
+      <skipped type="pytest.skip" message="MKL-DNN build is disabled">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:4767: MKL-DNN build is disabled</skipped>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_gradcheck_undefined_grad" time="0.015" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_gradcheck_validates_input_mkldnn" time="0.000" file="test_autograd.py">
+      <skipped type="pytest.skip" message="MKL-DNN build is disabled">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:4751: MKL-DNN build is disabled</skipped>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_gradcheck_validates_inputs" time="0.074" file="test_autograd.py">
+      <system-err>C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\torch\autograd\gradcheck.py:735: UserWarning: Input #0 requires gradient and is not a double precision floating point or complex. This check will likely fail if all the inputs are not of double precision floating point or complex. 
+  warnings.warn(
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\torch\autograd\gradcheck.py:735: UserWarning: Input #0 requires gradient and is not a double precision floating point or complex. This check will likely fail if all the inputs are not of double precision floating point or complex. 
+  warnings.warn(
+      </system-err>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_graph_save_on_cpu" time="0.016" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_graph_save_on_cpu_cuda" time="0.001" file="test_autograd.py">
+      <skipped type="pytest.skip" message="test requires CUDA">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:7930: test requires CUDA</skipped>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_hessian_vector" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_hook_edge_case_when_called_with_grad" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_hook_none" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_hook_with_no_name" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_hooks" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_hooks_cpp" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_increment_version" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_index_backward_does_not_save_tensor" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_indexing" time="0.032" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_indexing_duplicates" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_inplace" time="0.008" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_inplace_not_requires_grad" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_inplace_on_view_backward" time="0.013" file="test_autograd.py">
+      <system-err>C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\torch\nn\modules\instancenorm.py:80: UserWarning: input's size at dim=1 does not match num_features. You can silence this warning by not passing in num_features, which is not used because affine=False
+  warnings.warn(f"input's size at dim={feature_dim} does not match num_features. "
+      </system-err>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_inplace_on_view_leaf_errors" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_inplace_on_view_saved_output" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_inplace_on_view_weak_grad_fn" time="0.098" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_input_buffer_accum" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_integer_outputs" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_invalid_gradients" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_isolated_node" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_leaf_assignment" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_legacy_function_deprecation_exception" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_lobpcg" time="3.524" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_mark_non_differentiable" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_mark_non_differentiable_mixed" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_mark_non_differentiable_none" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_materialize_grads" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_multi_backward" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_multi_backward_no_grad" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_multi_grad_hooks" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_named_tensor_for_complex_views" time="0.003" file="test_autograd.py">
+      <system-err>C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\torch\_tensor.py:1125: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at C:\Users\radekbarton\Projects\pytorch\c10/core/TensorImpl.h:1904.)
+  return super().refine_names(names)
+      </system-err>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_naughty_anomaly_access" time="0.002" file="test_autograd.py">
+      <skipped type="pytest.xfail" message="" />
+    </testcase>
+    <testcase classname="TestAutograd" name="test_naughty_autograd_function_attribute_access" time="0.010" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_naughty_autograd_function_stashing_ctx" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_nested_anomaly_detect_nan" time="0.009" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_nested_anomaly_printstack_cleanup" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_next_functions" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_no_grad" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_no_grad_assignment" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_no_grad_copy" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_no_grad_copy_sparse" time="0.007" file="test_autograd.py">
+      <system-err>C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\torch\nn\functional.py:2352: UserWarning: Argument order of nn.functional.embedding_bag was changed. Usage `embedding_bag(weight, input, ...)` is deprecated, and should now be `embedding_bag(input, weight, ...)`.
+  warnings.warn(
+      </system-err>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_no_grad_input" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_no_grad_modifies_version" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_no_grad_python_function" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_no_requires_grad_inplace" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_no_unnecessary_save" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_no_unnecessary_unwrapping" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_not_implemented_fwad" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_not_implemented_grad" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_numpy_requires_grad" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_once_differentiable" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_out_variant_raises_when_inputs_require_grad" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_pack_hook_with_inplace_modification_should_fail" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_pickle" time="0.008" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_pow_zero_tensor_gradient" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_power_function" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_prehook_ordering" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_profiler" time="0.186" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_profiler_aggregation_fake" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_profiler_aggregation_lstm" time="2.574" file="test_autograd.py">
+      <system-out>
+===================================================================================================================================================================
+TEST
+-----------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------------------------------------------  
+                         Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg    # of Calls                                      Input Shapes  
+-----------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------------------------------------------  
+                   aten::lstm         0.72%     298.000us         5.03%       2.089ms       2.089ms             1      [[5, 3, 10], [], [], [], [], [], [], [], []]  
+                   aten::lstm         0.67%     277.000us         5.65%       2.347ms       2.347ms             1      [[5, 3, 10], [], [], [], [], [], [], [], []]  
+                   aten::lstm         0.65%     272.000us         4.77%       1.981ms       1.981ms             1      [[5, 3, 10], [], [], [], [], [], [], [], []]  
+                   aten::lstm         0.60%     248.000us         4.80%       1.994ms       1.994ms             1      [[5, 3, 10], [], [], [], [], [], [], [], []]  
+                   aten::lstm         0.59%     247.000us         4.71%       1.959ms       1.959ms             1      [[5, 3, 10], [], [], [], [], [], [], [], []]  
+                   aten::lstm         0.59%     247.000us         5.39%       2.239ms       2.239ms             1      [[5, 3, 10], [], [], [], [], [], [], [], []]  
+                   aten::lstm         0.58%     241.000us         4.71%       1.958ms       1.958ms             1      [[5, 3, 10], [], [], [], [], [], [], [], []]  
+                   aten::lstm         0.58%     241.000us         4.98%       2.068ms       2.068ms             1      [[5, 3, 10], [], [], [], [], [], [], [], []]  
+                   aten::lstm         0.56%     233.000us         4.83%       2.009ms       2.009ms             1      [[5, 3, 10], [], [], [], [], [], [], [], []]  
+                   aten::lstm         0.55%     229.000us         4.72%       1.961ms       1.961ms             1      [[5, 3, 10], [], [], [], [], [], [], [], []]  
+-----------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------------------------------------------  
+Self CPU time total: 41.556ms
+
+-----------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------------------------------------------  
+                         Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg    # of Calls                                      Input Shapes  
+-----------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------------------------------------------  
+                  aten::addmm        11.74%       4.879ms        14.69%       6.104ms      30.520us           200                 [[80], [3, 20], [20, 80], [], []]  
+                   aten::lstm        10.93%       4.544ms        98.11%      40.769ms       2.038ms            20      [[5, 3, 10], [], [], [], [], [], [], [], []]  
+               aten::sigmoid_        10.65%       4.426ms        10.65%       4.426ms       7.377us           600                                         [[3, 20]]  
+                    aten::mul        10.22%       4.247ms        10.22%       4.247ms       7.078us           600                                [[3, 20], [3, 20]]  
+           aten::unsafe_split         5.25%       2.181ms        16.25%       6.753ms      33.765us           200                                 [[3, 80], [], []]  
+                  aten::slice         4.89%       2.031ms         6.52%       2.708ms       3.385us           800                         [[3, 80], [], [], [], []]  
+                 aten::narrow         4.42%       1.835ms        10.89%       4.525ms       5.656us           800                             [[3, 80], [], [], []]  
+                   aten::tanh         3.89%       1.617ms         3.89%       1.617ms       8.085us           200                                         [[3, 20]]  
+                  aten::tanh_         3.75%       1.559ms         3.75%       1.559ms       7.795us           200                                         [[3, 20]]  
+                   aten::add_         2.88%       1.198ms         2.88%       1.198ms       5.990us           200                            [[3, 80], [3, 80], []]  
+-----------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------------------------------------------  
+Self CPU time total: 41.556ms =================================================================================================================================================================== TEST ===================================================================================================================================================================
+This report only display top-level ops statistics
+-----------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------------------------------------------  
+                         Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg    # of Calls                                      Input Shapes  
+-----------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------------------------------------------  
+                   aten::lstm         0.72%     298.000us         5.03%       2.089ms       2.089ms             1      [[5, 3, 10], [], [], [], [], [], [], [], []]  
+                   aten::lstm         0.67%     277.000us         5.65%       2.347ms       2.347ms             1      [[5, 3, 10], [], [], [], [], [], [], [], []]  
+                   aten::lstm         0.65%     272.000us         4.77%       1.981ms       1.981ms             1      [[5, 3, 10], [], [], [], [], [], [], [], []]  
+                   aten::lstm         0.60%     248.000us         4.80%       1.994ms       1.994ms             1      [[5, 3, 10], [], [], [], [], [], [], [], []]  
+                   aten::lstm         0.59%     247.000us         4.71%       1.959ms       1.959ms             1      [[5, 3, 10], [], [], [], [], [], [], [], []]  
+                   aten::lstm         0.59%     247.000us         5.39%       2.239ms       2.239ms             1      [[5, 3, 10], [], [], [], [], [], [], [], []]  
+                   aten::lstm         0.58%     241.000us         4.71%       1.958ms       1.958ms             1      [[5, 3, 10], [], [], [], [], [], [], [], []]  
+                   aten::lstm         0.58%     241.000us         4.98%       2.068ms       2.068ms             1      [[5, 3, 10], [], [], [], [], [], [], [], []]  
+                   aten::lstm         0.56%     233.000us         4.83%       2.009ms       2.009ms             1      [[5, 3, 10], [], [], [], [], [], [], [], []]  
+                   aten::lstm         0.55%     229.000us         4.72%       1.961ms       1.961ms             1      [[5, 3, 10], [], [], [], [], [], [], [], []]  
+-----------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------------------------------------------  
+Self CPU time total: 41.556ms ===================================================================================================================================================================
+This report only display top-level ops statistics
+-----------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------------------------------------------  
+                         Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg    # of Calls                                      Input Shapes  
+-----------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------------------------------------------  
+                   aten::lstm        10.93%       4.544ms        98.11%      40.769ms       2.038ms            20      [[5, 3, 10], [], [], [], [], [], [], [], []]  
+                  aten::randn         0.77%     320.000us         1.89%     787.000us      13.117us            60                              [[], [], [], [], []]  
+-----------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------------------------------------------  
+Self CPU time total: 41.556ms
+
+Total time based on python measurements:  45.189ms
+CPU time measurement python side overhead: 8.74%
+      </system-out>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_profiler_aggregation_table" time="0.007" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_profiler_function_event_avg" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_profiler_propagation" time="0.098" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_profiler_seq_nr" time="0.008" file="test_autograd.py">
+      <system-out>-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg    # of Calls  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                              aten::add        17.53%      27.000us        17.53%      27.000us      27.000us             1  
+                                              aten::sum        13.64%      21.000us        15.58%      24.000us      24.000us             1  
+                                            aten::randn         9.09%      14.000us        22.73%      35.000us      17.500us             2  
+                                          aten::normal_         9.09%      14.000us         9.09%      14.000us       7.000us             2  
+                        torch::autograd::AccumulateGrad         9.09%      14.000us        21.43%      33.000us      16.500us             2  
+                                            aten::copy_         8.44%      13.000us         8.44%      13.000us       6.500us             2  
+                                           aten::expand         5.19%       8.000us         5.84%       9.000us       9.000us             1  
+                                            aten::empty         4.55%       7.000us         4.55%       7.000us       3.500us             2  
+      autograd::engine::evaluate_function: SumBackward1         3.25%       5.000us        11.69%      18.000us      18.000us             1  
+                                        aten::ones_like         2.60%       4.000us         5.19%       8.000us       8.000us             1  
+                                    aten::empty_strided         2.60%       4.000us         2.60%       4.000us       1.333us             3  
+                                           SumBackward1         2.60%       4.000us         8.44%      13.000us      13.000us             1  
+      autograd::engine::evaluate_function: AddBackward0         2.60%       4.000us         3.25%       5.000us       5.000us             1  
+autograd::engine::evaluate_function: torch::autograd...         2.60%       4.000us        24.03%      37.000us      18.500us             2  
+                                aten::new_empty_strided         2.60%       4.000us         3.90%       6.000us       3.000us             2  
+                                       aten::as_strided         1.95%       3.000us         1.95%       3.000us       1.500us             2  
+                                       aten::empty_like         1.30%       2.000us         2.60%       4.000us       4.000us             1  
+                                            aten::fill_         0.65%       1.000us         0.65%       1.000us       0.500us             2  
+                                           AddBackward0         0.65%       1.000us         0.65%       1.000us       1.000us             1  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 154.000us
+
+      </system-out>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_profiler_shapes" time="0.007" file="test_autograd.py">
+      <system-out>
+----------------------  ------------  ------------  ------------  ------------  ------------  ------------  ---------------------------------------  
+                  Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg    # of Calls                             Input Shapes  
+----------------------  ------------  ------------  ------------  ------------  ------------  ------------  ---------------------------------------  
+          aten::linear         1.85%      10.000us        43.54%     236.000us     236.000us             1              [[128, 20], [30, 20], [30]]  
+               aten::t         6.83%      37.000us         9.59%      52.000us      52.000us             1                               [[30, 20]]  
+       aten::transpose         1.85%      10.000us         2.77%      15.000us      15.000us             1                       [[30, 20], [], []]  
+      aten::as_strided         0.92%       5.000us         0.92%       5.000us       5.000us             1                   [[30, 20], [], [], []]  
+           aten::addmm        28.60%     155.000us        32.10%     174.000us     174.000us             1      [[30], [128, 20], [20, 30], [], []]  
+          aten::expand         0.55%       3.000us         0.74%       4.000us       4.000us             1                           [[30], [], []]  
+      aten::as_strided         0.18%       1.000us         0.18%       1.000us       1.000us             1                       [[30], [], [], []]  
+           aten::copy_         2.77%      15.000us         2.77%      15.000us      15.000us             1               [[128, 30], [128, 30], []]  
+    aten::resolve_conj         0.00%       0.000us         0.00%       0.000us       0.000us             1                              [[128, 30]]  
+    aten::resolve_conj         0.00%       0.000us         0.00%       0.000us       0.000us             1                              [[128, 20]]  
+          aten::linear         0.92%       5.000us        56.46%     306.000us     306.000us             1              [[128, 30], [40, 30], [40]]  
+               aten::t         0.92%       5.000us         1.66%       9.000us       9.000us             1                               [[40, 30]]  
+       aten::transpose         0.55%       3.000us         0.74%       4.000us       4.000us             1                       [[40, 30], [], []]  
+      aten::as_strided         0.18%       1.000us         0.18%       1.000us       1.000us             1                   [[40, 30], [], [], []]  
+           aten::addmm        51.85%     281.000us        53.87%     292.000us     292.000us             1      [[40], [128, 30], [30, 40], [], []]  
+          aten::expand         0.37%       2.000us         0.55%       3.000us       3.000us             1                           [[40], [], []]  
+      aten::as_strided         0.18%       1.000us         0.18%       1.000us       1.000us             1                       [[40], [], [], []]  
+           aten::copy_         1.48%       8.000us         1.48%       8.000us       8.000us             1               [[128, 40], [128, 40], []]  
+    aten::resolve_conj         0.00%       0.000us         0.00%       0.000us       0.000us             1                              [[128, 40]]  
+    aten::resolve_conj         0.00%       0.000us         0.00%       0.000us       0.000us             1                              [[128, 30]]  
+----------------------  ------------  ------------  ------------  ------------  ------------  ------------  ---------------------------------------  
+Self CPU time total: 542.000us
+
+      </system-out>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_profiler_unboxed_only" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_pynode_destruction_deadlock" time="2.653" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_record_function" time="0.010" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_record_function_callbacks" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_record_function_legacy" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_record_function_multithreaded" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_reentrant_child_error" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_reentrant_priority" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_reentrant_with_callbacks_both_depths" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_reentrant_with_callbacks_depth_0" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_reentrant_with_callbacks_depth_1" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_reentrant_with_leaf_variable_hook" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_reentrant_with_non_leaf_variable_hook" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_requires_grad" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_requires_grad_" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_requires_grad_inplace" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_retain_grad" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_retain_grad_cycle" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_retain_grad_inplace" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_retain_grad_inplace_over_view" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_retains_grad_can_always_observe_tensor_prehook" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_retains_grad_inplace_multiple_outputs" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_return_duplicate" time="0.008" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_return_duplicate_inplace" time="0.008" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_return_leaf" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_return_leaf_inplace" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_save_none_for_backward" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_save_on_cpu_and_checkpoint" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_save_output_nr" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_saved_tensor_hooks_custom_error_propagaation" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_saved_variable_packing_unpacking_did_not_save_original_with_default_hooks" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_saved_variable_packing_unpacking_did_not_save_original_with_hooks" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_saved_variable_packing_unpacking_saved_original_with_default_hooks" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_saved_variable_packing_unpacking_saved_original_with_hooks" time="0.007" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_saved_variable_saved_original_inplace_detach" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_saved_variable_version_counter" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_saved_variables_deprecated" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_saving_variable_to_disk" time="0.024" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_select_expanded_v" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_select_sum" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_set_data_preserve_pyobj" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_set_data_self_requires_grad" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_set_data_tensorimpl_type" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_set_grad_coroutines" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_set_grad_coroutines_benign_exceptions" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_set_grad_coroutines_critical_exceptions" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_set_grad_coroutines_exit" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_set_grad_enabled" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_set_grad_generator_functions" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_set_grad_generator_functions_recursive" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_setitem" time="0.020" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_setitem_mask" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_setting_default_saved_variable_hooks_twice_should_not_fail" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_setting_default_saved_variable_hooks_twice_should_use_inner" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_shape" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_sharded_grad" time="0.007" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_simple_reentrant" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_slice_expanded_v" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_sparse_gather_both_scalar" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_sparse_gather_dim0" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_sparse_gather_dim1" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_sparse_gather_dim_neg" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_sparse_gather_ind_scalar" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_sparse_gather_x_scalar" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_sparse_mm_backward" time="0.015" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_tensor_grad_warnings" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_tensor_hooks_inplace" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_tensor_hooks_inplace_multiple_outputs" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_tensor_hooks_inplace_over_view" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_thread_shutdown" time="0.001" file="test_autograd.py">
+      <skipped type="pytest.skip" message="Skipping because doesn't work for windows">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:5321: Skipping because doesn't work for windows</skipped>
+    </testcase>
+    <testcase classname="TestAutograd" name="test_to_sparse_backward" time="0.033" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_too_many_grads" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_type_conversions" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_unrelated_inputs" time="0.012" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_unsafe_set_version_counter" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_unused_output" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_var_mean_differentiable" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_variable_traverse" time="0.108" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_version_counter" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_view_func_replay" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_view_replay_enabled" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_volatile_deprecated" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_will_engine_execute_node" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutograd" name="test_wrapped_number_saved_variable_hooks" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardModeBatchedGrad" name="test_inplace_on_view_not_same_layout" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardModeBatchedGrad" name="test_inplace_on_view_same_layout" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardModeBatchedGrad" name="test_metadata_check_for_storage_numel_skipped" time="0.002" file="test_autograd.py">
+      <system-err>C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:8159: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  self.assertEqual(len(primal.storage()), 5)
+      </system-err>
+    </testcase>
+    <testcase classname="TestAutogradForwardModeBatchedGrad" name="test_out_of_place_basic" time="0.011" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardModeBatchedGrad" name="test_out_of_place_not_same_layout" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_advanced_packing_unpacking" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_backward_graph_destruction" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_basic_packing_unpacking" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_codegen_ignores_undefined_outputs" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_create_new_zeros_with_same_meta" time="0.013" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_default_level" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_detach_view_tracking" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_forward_level_cleanup" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_fwd_grad_enabled" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_grad_cleanup" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_make_dual_forbid_integral_dtype" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_make_dual_inference_tensor_in_inference_mode" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_make_dual_torch_dispatch" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_metadata_check_check_conj" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_metadata_check_checks_ignores_size_zero" time="0.007" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_metadata_check_checks_storage_numel" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_metadata_check_ignore_storage_offset_for_zero_numel_tensor" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_metadata_check_when_primal_has_conj_bit" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_metadata_check_when_primal_has_neg_bit" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_nested_level" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_non_differentiable" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_out_variant" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_print" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_set_fw_grad_having_own_fw_grad_at_same_level" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_set_fwd_grad_enabled" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_size_check" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_view_inplace_always_creates_a_view" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_view_inplace_differentiable_views" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradForwardMode" name="test_view_inplace_non_differentiable_views" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAllowMutationOnSaved" name="test_backward_out_of_context" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAllowMutationOnSaved" name="test_basic" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAllowMutationOnSaved" name="test_disallow_nesting" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAllowMutationOnSaved" name="test_double_backward" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAllowMutationOnSaved" name="test_save_base_and_modify_view" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAllowMutationOnSaved" name="test_save_view_modify_base" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAllowMutationOnSaved" name="test_saved_but_not_anymore" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAllowMutationOnSaved" name="test_saved_same_tensor_different_versions" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAllowMutationOnSaved" name="test_saved_same_tensor_many_times" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAllowMutationOnSaved" name="test_views" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAllowMutationOnSaved" name="test_with_math_views" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAllowMutationOnSaved" name="test_with_out_variant" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradInferenceMode" name="test_inference_mode_context_manager" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutogradInferenceMode" name="test_inference_mode_decorator" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradInferenceMode" name="test_inference_mode_existing_autograd_session" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradInferenceMode" name="test_inference_mode_handle_direct_view_on_rebase" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradInferenceMode" name="test_inference_mode_handle_indirect_view_on_rebase" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradInferenceMode" name="test_inference_mode_inf_tensor_in_inf_mode_functional_op" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutogradInferenceMode" name="test_inference_mode_inf_tensor_in_inf_mode_inplace_op" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradInferenceMode" name="test_inference_mode_inf_tensor_in_inf_mode_view_op" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutogradInferenceMode" name="test_inference_mode_inf_tensor_in_normal_mode_functional_op" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutogradInferenceMode" name="test_inference_mode_inf_tensor_in_normal_mode_inplace_op" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradInferenceMode" name="test_inference_mode_inf_tensor_in_normal_mode_view_op" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutogradInferenceMode" name="test_inference_mode_tensor_creation" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutogradInferenceMode" name="test_mix_inference_and_normal_tensor_functional_op" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradInferenceMode" name="test_mix_inference_and_normal_tensor_inplace_op" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradInferenceMode" name="test_mix_inference_and_normal_tensor_view_op" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutogradInferenceMode" name="test_normal_tensor_inplace_output_in_inference_mode" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradInferenceMode" name="test_normal_tensor_inplace_output_in_normal_mode" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutogradInferenceMode" name="test_normal_tensor_view_output_in_inference_mode" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutogradInferenceMode" name="test_normal_tensor_view_output_in_normal_mode" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestMultithreadAutograd" name="test_cat_stack_r_to_c" time="0.232" file="test_autograd.py" />
+    <testcase classname="TestMultithreadAutograd" name="test_dataparallel_saved_tensors_hooks" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestMultithreadAutograd" name="test_fork_join_in_middle" time="0.023" file="test_autograd.py" />
+    <testcase classname="TestMultithreadAutograd" name="test_multi_grad_hooks" time="0.007" file="test_autograd.py" />
+    <testcase classname="TestMultithreadAutograd" name="test_multithreaded_exception_propagation" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestMultithreadAutograd" name="test_preserve_backtrace" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestMultithreadAutograd" name="test_python_thread_in_middle" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestMultithreadAutograd" name="test_simple_backward" time="0.007" file="test_autograd.py" />
+    <testcase classname="TestMultithreadAutograd" name="test_simple_backward_same_input" time="0.012" file="test_autograd.py" />
+    <testcase classname="TestNestedCheckpoint" name="test_nested_checkpoint_early_stop_False" time="0.273" file="test_autograd.py" />
+    <testcase classname="TestNestedCheckpoint" name="test_nested_checkpoint_early_stop_True" time="0.113" file="test_autograd.py" />
+    <testcase classname="TestNestedCheckpoint" name="test_nested_checkpoint_kwargs_early_stop_False" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestNestedCheckpoint" name="test_nested_checkpoint_kwargs_early_stop_True" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestNestedCheckpoint" name="test_nested_checkpoint_non_tensor_inputs_and_outputs_early_stop_False" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestNestedCheckpoint" name="test_nested_checkpoint_non_tensor_inputs_and_outputs_early_stop_True" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestNestedCheckpoint" name="test_nested_checkpoint_reentrant_backwards_early_stop_False" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestNestedCheckpoint" name="test_nested_checkpoint_reentrant_backwards_early_stop_True" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestNestedCheckpoint" name="test_nested_checkpoint_same_graph_early_stop_False" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestNestedCheckpoint" name="test_nested_checkpoint_same_graph_early_stop_True" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestNestedCheckpoint" name="test_nested_checkpoint_set_early_stop" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestNestedCheckpoint" name="test_nested_checkpoint_set_early_stop_no_recompution_needed" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestNestedCheckpoint" name="test_nested_checkpoint_two_children_early_stop_False" time="0.021" file="test_autograd.py" />
+    <testcase classname="TestNestedCheckpoint" name="test_nested_checkpoint_two_children_early_stop_True" time="0.021" file="test_autograd.py" />
+    <testcase classname="TestAutogradComplex" name="test_view_func_for_complex_views" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutogradComplex" name="test_view_with_multi_output" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_construct_standard_basis_for_base_tensor" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_construct_standard_basis_for_cuda_base_tensor" time="0.000" file="test_autograd.py">
+      <skipped type="pytest.skip" message="test requires CUDA">C:\Users\radekbarton\Projects\pytorch\test\autograd\test_functional.py:504: test requires CUDA</skipped>
+    </testcase>
+    <testcase classname="TestAutogradFunctional" name="test_construct_standard_basis_for_cuda_logging_tensor" time="0.001" file="test_autograd.py">
+      <skipped type="pytest.skip" message="test requires CUDA">C:\Users\radekbarton\Projects\pytorch\test\autograd\test_functional.py:504: test requires CUDA</skipped>
+    </testcase>
+    <testcase classname="TestAutogradFunctional" name="test_construct_standard_basis_for_logging_tensor" time="0.019" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_create_graph_vectorize_False_base_tensor" time="0.242" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_create_graph_vectorize_False_logging_tensor" time="1.257" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_create_graph_vectorize_True_base_tensor" time="0.118" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_create_graph_vectorize_True_logging_tensor" time="0.523" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_err_check_strict_base_tensor" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_err_check_strict_logging_tensor" time="0.011" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_err_check_strict_vectorize_base_tensor" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_err_check_strict_vectorize_logging_tensor" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_err_check_vectorize_False_base_tensor" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_err_check_vectorize_False_logging_tensor" time="0.021" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_err_check_vectorize_True_base_tensor" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_err_check_vectorize_True_logging_tensor" time="0.011" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_match_vhp_hvp_base_tensor" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_match_vhp_hvp_logging_tensor" time="0.014" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_no_grad_base_tensor" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_no_grad_logging_tensor" time="0.014" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_output_base_tensor" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_output_logging_tensor" time="0.018" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_output_vectorized_base_tensor" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_output_vectorized_logging_tensor" time="0.010" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_scalar_vectorize_False_base_tensor" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_scalar_vectorize_False_logging_tensor" time="0.012" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_scalar_vectorize_True_base_tensor" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_scalar_vectorize_True_logging_tensor" time="0.007" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_vectorize_correctness_multi_input_base_tensor" time="0.024" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_vectorize_correctness_multi_input_logging_tensor" time="0.157" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_vectorize_correctness_simple_base_tensor" time="0.012" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_vectorize_correctness_simple_logging_tensor" time="0.049" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_vectorize_correctness_unrelated_outputs_base_tensor" time="0.010" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_vectorize_correctness_unrelated_outputs_logging_tensor" time="0.044" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_vectorize_raises_no_warnings_base_tensor" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hessian_vectorize_raises_no_warnings_logging_tensor" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hvp_create_graph_base_tensor" time="0.153" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hvp_create_graph_logging_tensor" time="0.658" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hvp_err_check_base_tensor" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hvp_err_check_logging_tensor" time="0.012" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hvp_err_check_strict_base_tensor" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hvp_err_check_strict_logging_tensor" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hvp_no_grad_base_tensor" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hvp_no_grad_logging_tensor" time="0.010" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hvp_output_base_tensor" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hvp_output_logging_tensor" time="0.007" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hvp_scalar_base_tensor" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_hvp_scalar_logging_tensor" time="0.007" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_create_graph_vectorize_False_base_tensor" time="0.095" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_create_graph_vectorize_False_logging_tensor" time="0.475" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_create_graph_vectorize_True_base_tensor" time="0.076" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_create_graph_vectorize_True_logging_tensor" time="0.328" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_err_check_strict_base_tensor" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_err_check_strict_logging_tensor" time="0.009" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_err_check_strict_vectorize_base_tensor" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_err_check_strict_vectorize_logging_tensor" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_err_check_vectorize_False_base_tensor" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_err_check_vectorize_False_logging_tensor" time="0.011" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_err_check_vectorize_True_base_tensor" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_err_check_vectorize_True_logging_tensor" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_match_vjp_jvp_base_tensor" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_match_vjp_jvp_logging_tensor" time="0.011" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_no_grad_base_tensor" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_no_grad_logging_tensor" time="0.008" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_output_base_tensor" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_output_logging_tensor" time="0.012" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_output_vectorized_base_tensor" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_output_vectorized_logging_tensor" time="0.008" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_scalar_base_tensor" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_scalar_logging_tensor" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_scalar_vectorized_base_tensor" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_scalar_vectorized_logging_tensor" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_vectorize_correctness_different_devices_base_tensor" time="0.000" file="test_autograd.py">
+      <skipped type="pytest.skip" message="test requires CUDA">C:\Users\radekbarton\Projects\pytorch\test\autograd\test_functional.py:771: test requires CUDA</skipped>
+    </testcase>
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_vectorize_correctness_different_devices_logging_tensor" time="0.000" file="test_autograd.py">
+      <skipped type="pytest.skip" message="test requires CUDA">C:\Users\radekbarton\Projects\pytorch\test\autograd\test_functional.py:771: test requires CUDA</skipped>
+    </testcase>
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_vectorize_correctness_different_dtype_base_tensor" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_vectorize_correctness_different_dtype_logging_tensor" time="0.014" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_vectorize_correctness_multi_input_base_tensor" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_vectorize_correctness_multi_input_logging_tensor" time="0.026" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_vectorize_correctness_multi_input_multi_output_base_tensor" time="0.016" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_vectorize_correctness_multi_input_multi_output_logging_tensor" time="0.079" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_vectorize_correctness_simple_base_tensor" time="0.008" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_vectorize_correctness_simple_logging_tensor" time="0.029" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_vectorize_correctness_unrelated_outputs_base_tensor" time="0.007" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_vectorize_correctness_unrelated_outputs_logging_tensor" time="0.032" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_vectorize_correctness_zero_dim_base_tensor" time="0.011" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_vectorize_correctness_zero_dim_logging_tensor" time="0.053" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_vectorize_raises_no_warnings_base_tensor" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jacobian_vectorize_raises_no_warnings_logging_tensor" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jvp_create_graph_base_tensor" time="0.111" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jvp_create_graph_logging_tensor" time="0.479" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jvp_err_check_base_tensor" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jvp_err_check_logging_tensor" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jvp_err_check_strict_base_tensor" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jvp_err_check_strict_logging_tensor" time="0.007" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jvp_no_grad_base_tensor" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jvp_no_grad_logging_tensor" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jvp_output_base_tensor" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jvp_output_logging_tensor" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jvp_scalar_base_tensor" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_jvp_scalar_logging_tensor" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_vhp_create_graph_base_tensor" time="0.133" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_vhp_create_graph_logging_tensor" time="0.597" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_vhp_err_check_base_tensor" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_vhp_err_check_logging_tensor" time="0.008" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_vhp_err_check_strict_base_tensor" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_vhp_err_check_strict_logging_tensor" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_vhp_no_grad_base_tensor" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_vhp_no_grad_logging_tensor" time="0.008" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_vhp_output_base_tensor" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_vhp_output_logging_tensor" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_vhp_scalar_base_tensor" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_vhp_scalar_logging_tensor" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_vjp_create_graph_base_tensor" time="0.101" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_vjp_create_graph_logging_tensor" time="0.429" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_vjp_err_check_base_tensor" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_vjp_err_check_logging_tensor" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_vjp_err_check_strict_base_tensor" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_vjp_err_check_strict_logging_tensor" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_vjp_no_grad_base_tensor" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_vjp_no_grad_logging_tensor" time="0.007" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_vjp_output_base_tensor" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_vjp_output_logging_tensor" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_vjp_scalar_base_tensor" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradFunctional" name="test_vjp_scalar_logging_tensor" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_advanced_indexing_backwards_large_cpu" time="0.002" file="test_autograd.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:9072: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_advanced_indexing_backwards_memory_format_cpu" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_backward_device_cpu" time="0.001" file="test_autograd.py">
+      <skipped type="pytest.skip" message="fewer than 2 devices detected">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:9306: fewer than 2 devices detected</skipped>
+    </testcase>
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_complex_scalar_backward_cpu" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_copy__cpu" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_copy_forward_ad_broadcasting_cpu" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_copy_forward_ad_same_layout_copies_grad_cpu" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_copy_r_to_c_cpu" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_cross_device_reentrant_autograd_cpu" time="0.001" file="test_autograd.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:9404: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_free_unneeded_tensor_cpu" time="0.001" file="test_autograd.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:9188: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_grad_assignment_cpu" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_gradcheck_input_output_different_device_cpu" time="0.001" file="test_autograd.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:9634: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_inplace_multiple_output_view_of_view_cpu" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_inplace_on_view_backprop_base_cpu" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_inplace_on_view_backprop_view_cpu" time="0.002" file="test_autograd.py">
+      <system-err>C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:9541: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at C:\Users\radekbarton\Projects\pytorch\build\aten\src\ATen/core/TensorBody.h:491.)
+  self.assertIsNone(a.grad)
+      </system-err>
+    </testcase>
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_inplace_on_view_backprop_view_of_view_cpu" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_inplace_on_view_gradcheck_cpu" time="0.018" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_inplace_on_view_makes_base_require_grad_cpu" time="0.006" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_inplace_on_view_modify_base_cpu" time="0.008" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_inplace_on_view_multi_output_safe_cpu" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_inplace_on_view_multi_output_unsafe_cpu" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_inplace_on_view_multiple_outputs_cpu" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_inplace_on_view_non_contig_cpu" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_inplace_on_view_of_multiple_output_view_cpu" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_inplace_on_view_of_view_cpu" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_inplace_on_view_python_cpu" time="0.016" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_inplace_on_view_then_no_grad_cpu" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_inputbuffer_add_multidevice_cpu" time="0.001" file="test_autograd.py">
+      <skipped type="pytest.skip" message="fewer than 2 devices detected">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:9325: fewer than 2 devices detected</skipped>
+    </testcase>
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_min_max_median_backprops_to_all_values_cpu" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_mv_grad_stride_0_cpu" time="0.007" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_non_differentiable_ops_cpu" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_parameter_resize_cpu" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_pin_memory_cpu" time="0.001" file="test_autograd.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:9203: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_pow_real_negative_base_complex_exponent_cpu" time="0.012" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_profiler_emit_itt_cpu" time="0.000" file="test_autograd.py">
+      <skipped type="pytest.skip" message="ITT is required">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:9235: ITT is required</skipped>
+    </testcase>
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_profiler_emit_nvtx_cpu" time="0.001" file="test_autograd.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:9212: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_pyscalar_conversions_cpu" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_reentrant_parent_error_on_cpu_cpu" time="0.001" file="test_autograd.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:9128: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_requires_grad_factory_cpu_float32" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_requires_grad_factory_cpu_float64" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_resize_version_bump_cpu" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_rnn_backward_to_input_but_not_parameters_cpu" time="0.001" file="test_autograd.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:9223: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_scatter_index_reduce_amin_amax_backprops_to_all_values_cpu" time="0.010" file="test_autograd.py">
+      <system-err>C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\torch\autograd\gradcheck.py:1561: UserWarning: index_reduce() is in beta and the API may change at any time. (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\native\TensorAdvancedIndexing.cpp:1110.)
+  func_out = func(*tupled_inputs)
+      </system-err>
+    </testcase>
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_scatter_index_reduce_prod_gradgrad_error_cpu" time="0.017" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_set_requires_grad_only_for_floats_cpu_float32" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_set_requires_grad_only_for_floats_cpu_float64" time="0.001" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_set_requires_grad_only_for_floats_cpu_int16" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_set_requires_grad_only_for_floats_cpu_int32" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_set_requires_grad_only_for_floats_cpu_int64" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_set_requires_grad_only_for_floats_cpu_int8" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_simple_reentrant_cross_device_cpu" time="0.001" file="test_autograd.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:9365: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_sparse_backward_cpu_complex128" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_sparse_backward_cpu_float64" time="0.005" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_sparse_ctor_getter_backward_cpu_complex128" time="0.051" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_sparse_ctor_getter_backward_cpu_float64" time="0.036" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_sparse_mask_autograd_cpu" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_strided_leaf_grad_layout_cpu" time="0.007" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_to_r_to_c_cpu" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_unused_output_device_cpu" time="0.002" file="test_autograd.py">
+      <skipped type="pytest.skip" message="fewer than 2 devices detected">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:9297: fewer than 2 devices detected</skipped>
+    </testcase>
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_warning_in_backward_cpu" time="0.007" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_where_functional_cpu" time="0.019" file="test_autograd.py" />
+    <testcase classname="TestAutogradDeviceTypeCPU" name="test_where_scalar_cpu" time="0.017" file="test_autograd.py" />
+    <testcase classname="TestAutogradMultipleDispatchCPU" name="test_autograd_composite_implicit_and_dispatch_registration_cpu" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutogradMultipleDispatchCPU" name="test_autograd_multiple_dispatch_registrations_cpu" time="0.004" file="test_autograd.py" />
+    <testcase classname="TestAutogradMultipleDispatchCPU" name="test_backward_single_threaded_cpu" time="0.002" file="test_autograd.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:11045: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestAutogradMultipleDispatchCPU" name="test_backward_tls_stash_cpu" time="0.003" file="test_autograd.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_autograd.py:11072: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestAutogradMultipleDispatchCPU" name="test_foward_mode_AD_cpu" time="0.002" file="test_autograd.py" />
+    <testcase classname="TestAutogradMultipleDispatchCPU" name="test_per_dispatch_key_input_saving_cpu" time="0.003" file="test_autograd.py" />
+    <testcase classname="TestAutogradMultipleDispatchCPU" name="test_view_copy_cpu" time="0.003" file="test_autograd.py" />
+  </testsuite>
+</testsuites>

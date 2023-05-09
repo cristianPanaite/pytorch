@@ -1,0 +1,1078 @@
+<testsuites>
+  <testsuite name="pytest" errors="0" failures="0" skipped="39" tests="844" time="33.010" timestamp="2023-05-05T22:30:31.710548" hostname="BartonTest">
+    <testcase classname="TestBasicVitalSigns" name="test_basic_vitals" time="0.135" file="test_torch.py" />
+    <testcase classname="TestBasicVitalSigns" name="test_basic_vitals_read_write" time="0.002" file="test_torch.py" />
+    <testcase classname="TestBasicVitalSigns" name="test_dataloader_vitals" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_RNGState" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_RNGStateAliasing" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_RNG_after_pickle" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_Size" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_Size_iter" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_Size_scalar" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_add_meta_scalar" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_allow_tensor_metadata_change" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_apply" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_as_subclass" time="0.015" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_assert_async" time="0.322" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_backward_hooks_traverse" time="0.054" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_batch_norm_cpu_inference" time="0.009" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_bmm_multithreaded" time="0.872" file="test_torch.py">
+      <system-err>C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:8913: UserWarning: An output with one or more elements was resized since it had shape [1, 23, 12], which does not match the required output shape [1, 23, 0]. This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\native\Resize.cpp:33.)
+  torch.bmm(b1, b2, out=res2)
+C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:8913: UserWarning: An output with one or more elements was resized since it had shape [1, 23, 12], which does not match the required output shape [1, 0, 12]. This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\native\Resize.cpp:33.)
+  torch.bmm(b1, b2, out=res2)
+C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:8913: UserWarning: An output with one or more elements was resized since it had shape [1, 23, 12], which does not match the required output shape [1, 0, 0]. This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\native\Resize.cpp:33.)
+  torch.bmm(b1, b2, out=res2)
+C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:8913: UserWarning: An output with one or more elements was resized since it had shape [1, 23, 12], which does not match the required output shape [0, 23, 12]. This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\native\Resize.cpp:33.)
+  torch.bmm(b1, b2, out=res2)
+C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:8913: UserWarning: An output with one or more elements was resized since it had shape [1, 23, 12], which does not match the required output shape [0, 23, 0]. This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\native\Resize.cpp:33.)
+  torch.bmm(b1, b2, out=res2)
+C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:8913: UserWarning: An output with one or more elements was resized since it had shape [1, 23, 12], which does not match the required output shape [0, 0, 12]. This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\native\Resize.cpp:33.)
+  torch.bmm(b1, b2, out=res2)
+C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:8913: UserWarning: An output with one or more elements was resized since it had shape [1, 23, 12], which does not match the required output shape [0, 0, 0]. This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\native\Resize.cpp:33.)
+  torch.bmm(b1, b2, out=res2)
+C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:8913: UserWarning: An output with one or more elements was resized since it had shape [10, 23, 12], which does not match the required output shape [10, 23, 0]. This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\native\Resize.cpp:33.)
+  torch.bmm(b1, b2, out=res2)
+C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:8913: UserWarning: An output with one or more elements was resized since it had shape [10, 23, 12], which does not match the required output shape [10, 0, 12]. This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\native\Resize.cpp:33.)
+  torch.bmm(b1, b2, out=res2)
+C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:8913: UserWarning: An output with one or more elements was resized since it had shape [10, 23, 12], which does not match the required output shape [10, 0, 0]. This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\native\Resize.cpp:33.)
+  torch.bmm(b1, b2, out=res2)
+C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:8913: UserWarning: An output with one or more elements was resized since it had shape [10, 23, 12], which does not match the required output shape [0, 23, 12]. This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\native\Resize.cpp:33.)
+  torch.bmm(b1, b2, out=res2)
+C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:8913: UserWarning: An output with one or more elements was resized since it had shape [10, 23, 12], which does not match the required output shape [0, 23, 0]. This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\native\Resize.cpp:33.)
+  torch.bmm(b1, b2, out=res2)
+C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:8913: UserWarning: An output with one or more elements was resized since it had shape [10, 23, 12], which does not match the required output shape [0, 0, 12]. This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\native\Resize.cpp:33.)
+  torch.bmm(b1, b2, out=res2)
+C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:8913: UserWarning: An output with one or more elements was resized since it had shape [10, 23, 12], which does not match the required output shape [0, 0, 0]. This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\native\Resize.cpp:33.)
+  torch.bmm(b1, b2, out=res2)
+      </system-err>
+    </testcase>
+    <testcase classname="TestTorch" name="test_boxMullerState" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_c10_layer_norm" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="Pytorch is compiled without Caffe2">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:7529: Pytorch is compiled without Caffe2</skipped>
+    </testcase>
+    <testcase classname="TestTorch" name="test_cat_neg_dim" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_check" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_chunk_neg_dim" time="0.009" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_conj_neg_tolist" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_contains" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_copy_broadcast" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_copy_dtypes" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_copy_float16" time="0.008" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_copy_many_to_one" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_copy_transpose" time="0.004" file="test_torch.py">
+      <system-err>C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:8074: UserWarning: ComplexHalf support is experimental and many operators don't support it yet. (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\EmptyTensor.cpp:32.)
+  x = torch.arange(100 * 100).reshape(100, 100).to(dtype=torch.complex32).t()
+      </system-err>
+    </testcase>
+    <testcase classname="TestTorch" name="test_cuda_not_built" time="0.005" file="test_torch.py">
+      <system-err>C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\torch\__init__.py:608: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at C:\Users\radekbarton\Projects\pytorch\torch\csrc\tensor\python_tensor.cpp:441.)
+  _C._set_default_tensor_type(t)
+      </system-err>
+    </testcase>
+    <testcase classname="TestTorch" name="test_cummax_neg_dim" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_cummin_neg_dim" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_cumprod_neg_dim" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_cumsum_neg_dim" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_cxx_flags" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_dead_weak_ref" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_deepcopy_gradient" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_deepcopy_parameter" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_deterministic_flag" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_device" time="0.007" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_dir" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_doc" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_doc_template" time="0.055" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_dot_data_use" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_dtype_is_signed" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_element_size" time="0.004" file="test_torch.py">
+      <system-err>C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:6208: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  byte = torch.ByteStorage().element_size()
+      </system-err>
+    </testcase>
+    <testcase classname="TestTorch" name="test_empty_meta" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_empty_storage_view" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_equal" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_error_msg_type_translation" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_fill_diagonal" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_fix_weakref_no_leak" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_format_scalar_meta" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_from_buffer" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_from_file" time="0.024" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_gather_neg_dim" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_generator_cpu" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_get_cpu_capability" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_has_internal_overlap" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_has_storage" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_index_add" time="0.046" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_index_add_all_dtypes" time="0.013" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_index_add_correctness" time="1.376" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_index_add_neg_dim" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_index_copy_neg_dim" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_index_fill_neg_dim" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_index_select_neg_dim" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_invalid_generator_raises" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_is_nonzero" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_is_same_size" time="0.005" file="test_torch.py">
+      <system-err>C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:6043: UserWarning: The PyTorch API of nested tensors is in prototype stage and will change in the near future. (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\NestedTensorImpl.cpp:180.)
+  nt1 = torch.nested.nested_tensor([torch.ones(2, 4), torch.ones(3, 4), torch.ones(5, 4)])
+      </system-err>
+    </testcase>
+    <testcase classname="TestTorch" name="test_iter" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_kthvalue_neg_dim" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_logcumsumexp_neg_dim" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_manual_seed" time="0.012" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_map" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_map2" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_max_neg_dim" time="0.023" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_mean_neg_dim" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_median_neg_dim" time="0.007" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_memory_format" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_memory_format_contiguous_returns_same_tensor_if_already_satisfies" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_memory_format_empty" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_min_neg_dim" time="0.018" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_mode_neg_dim" time="0.014" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_multinomial_invalid_probs" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="FIXME: CUDA OOM error on Windows">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:8315: FIXME: CUDA OOM error on Windows</skipped>
+    </testcase>
+    <testcase classname="TestTorch" name="test_nanmedian_neg_dim" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_narrow_neg_dim" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_nbytes" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_ndim" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_new" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_newaxis_numpy_comparison" time="0.009" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_newindex" time="0.032" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_no_cuda_monkeypatch" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_norm_neg_dim" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_normal_shape" time="0.010" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_numel" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_parallel_info" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_parsing_double" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_parsing_int64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_parsing_intlist" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_permute" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_pickle" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_pickle_dtype" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_pickle_function" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_pickle_parameter" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_pickle_parameter_no_requires_grad" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_pickle_size" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_pin_memory" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_print" time="0.085" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_prod_neg_dim" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_pyobj_preserved" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_qengine" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_renorm_neg_dim" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_resurrected_weak_ref" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_reversed" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_scatter_neg_dim" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_select_neg_dim" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_set_flush_denormal" time="0.000" file="test_torch.py">
+      <skipped type="pytest.skip" message="flush_denormal not supported">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:7414: flush_denormal not supported</skipped>
+    </testcase>
+    <testcase classname="TestTorch" name="test_setting_real_imag_to_a_number" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_show_config" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_size_neg_dim" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_sizeof" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_slice" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_slow_test" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="test is slow; run with PYTORCH_TEST_WITH_SLOW to enable test">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:7450: test is slow; run with PYTORCH_TEST_WITH_SLOW to enable test</skipped>
+    </testcase>
+    <testcase classname="TestTorch" name="test_sobolengine_bounds" time="0.007" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_sobolengine_bounds_scrambled" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_sobolengine_continuing" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_sobolengine_continuing_scrambled" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_sobolengine_distribution" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_sobolengine_distribution_scrambled" time="0.008" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_sobolengine_draw" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_sobolengine_draw_base2" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_sobolengine_draw_base2_scrambled" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_sobolengine_draw_scrambled" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_sobolengine_fast_forward" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_sobolengine_fast_forward_scrambled" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_sobolengine_first_point" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_sobolengine_high_dim" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_sobolengine_raise" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_sobolengine_reset" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_sobolengine_reset_scrambled" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_sort_neg_dim" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_split_neg_dim" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_squeeze_neg_dim" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_std_neg_dim" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_storage_casts" time="0.018" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_storage_error" time="0.020" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_storage_error_no_attribute" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_structseq_repr" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_subclass_preserved" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_subclass_tensors" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_sum_neg_dim" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_t_not_2d_error" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_tensor_base_init" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_tensor_base_new" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_tensor_ctor_scalar" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_tensor_cycle_via_dict" time="0.107" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_tensor_cycle_via_slots" time="0.055" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_tensor_dict_dealloc" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_tensor_finalizer_dealloc" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_tensor_set" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_tensor_set_errors" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_tensor_slot_dealloc" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_tensor_weakref_dealloc" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_tensor_where_scalar" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_tensoriterator_output_setup" time="0.259" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_to" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_to_with_tensor" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_topk_neg_dim" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_torch_from_file" time="0.017" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_transpose_neg_dim" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_type" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_type_alias" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_type_conversion_via_dtype_name" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_typed_storage_deprecation_warning" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_typed_storage_internal_no_warning" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_unbind_neg_dim" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_unflatten" time="0.008" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_unfold_neg_dim" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_unsqueeze_neg_dim" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_upsample_nearest1d_meta" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_upsample_nearest2d_meta" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_var_neg_dim" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_warn_types" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorch" name="test_wildcard_import" time="0.003" file="test_torch.py" />
+    <testcase classname="TestVitalSignsCudaCPU" name="test_cuda_vitals_gpu_only_cpu" time="0.012" file="test_torch.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:112: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_addcdiv_cpu_complex128" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_addcdiv_cpu_complex64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_addcdiv_cpu_float32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_addcdiv_cpu_float64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_addcdiv_cpu_int16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_addcdiv_cpu_int32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_addcdiv_cpu_int64" time="0.007" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_addcdiv_cpu_int8" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_addcdiv_cpu_uint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_addcmul_cpu_complex128" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_addcmul_cpu_complex64" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_addcmul_cpu_float32" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_addcmul_cpu_float64" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_addcmul_cpu_int16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_addcmul_cpu_int32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_addcmul_cpu_int64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_addcmul_cpu_int8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_addcmul_cpu_uint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_assertRaisesRegex_ignore_msg_non_native_device_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bernoulli_edge_cases_cpu_float32" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="test is slow; run with PYTORCH_TEST_WITH_SLOW to enable test">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:2017: test is slow; run with PYTORCH_TEST_WITH_SLOW to enable test</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bernoulli_edge_cases_cpu_float64" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="test is slow; run with PYTORCH_TEST_WITH_SLOW to enable test">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:2017: test is slow; run with PYTORCH_TEST_WITH_SLOW to enable test</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bernoulli_mem_overlap_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bernoulli_p_cpu_bfloat16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bernoulli_p_cpu_float32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bernoulli_p_cpu_float64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bernoulli_self_cpu_bool" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bernoulli_self_cpu_float32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bernoulli_self_cpu_float64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bernoulli_self_cpu_int16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bernoulli_self_cpu_int32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bernoulli_self_cpu_int64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bernoulli_self_cpu_int8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bernoulli_self_cpu_uint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bfloat16_float_copy_cpu" time="0.052" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bool_tensor_value_change_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_add_cpu" time="0.007" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_addcdiv_cpu" time="0.008" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_addcmul_cpu" time="0.007" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_atan2_cpu" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_copy_cpu" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_dist_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_div_cpu" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_eq_cpu" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_fmod_cpu" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_ge_cpu" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_gt_cpu" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_le_cpu" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_lerp_cpu" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_lt_cpu" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_map2_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_map_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_masked_fill_cpu" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_masked_scatter_cpu" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_masked_select_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_max_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_min_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_mul_cpu" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_ne_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_pow_cpu" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_remainder_cpu" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_broadcast_fn_sub_cpu" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bytes_to_scalar_cpu_bool" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bytes_to_scalar_cpu_complex128" time="0.011" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bytes_to_scalar_cpu_complex64" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bytes_to_scalar_cpu_float32" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bytes_to_scalar_cpu_float64" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bytes_to_scalar_cpu_int16" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bytes_to_scalar_cpu_int32" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bytes_to_scalar_cpu_int64" time="0.008" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bytes_to_scalar_cpu_int8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_bytes_to_scalar_cpu_uint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cauchy_cpu_bfloat16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cauchy_cpu_float16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cauchy_cpu_float32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cauchy_cpu_float64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cauchy_kstest_cpu_bfloat16" time="1.394" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cauchy_kstest_cpu_float16" time="0.008" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cauchy_kstest_cpu_float32" time="0.007" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cauchy_kstest_cpu_float64" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cauchy_no_inf_cpu_bfloat16" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="test is slow; run with PYTORCH_TEST_WITH_SLOW to enable test">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:2157: test is slow; run with PYTORCH_TEST_WITH_SLOW to enable test</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cauchy_no_inf_cpu_float32" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="test is slow; run with PYTORCH_TEST_WITH_SLOW to enable test">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:2157: test is slow; run with PYTORCH_TEST_WITH_SLOW to enable test</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cdist_cuda_backward_cpu" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:2282: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cdist_empty_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cdist_euclidean_large_cpu" time="0.108" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cdist_grad_p_lt_1_no_nan_cpu" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cdist_large_batch_cpu" time="0.003" file="test_torch.py">
+      <skipped type="pytest.skip" message="test is slow; run with PYTORCH_TEST_WITH_SLOW to enable test">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:2314: test is slow; run with PYTORCH_TEST_WITH_SLOW to enable test</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cdist_large_cpu" time="0.137" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cdist_non_contiguous_batch_cpu" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cdist_non_contiguous_cpu" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cdist_norm_batch_cpu" time="0.575" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cdist_norm_cpu" time="0.177" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cdist_same_inputs_cpu" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_check_tensor_all_cpu" time="0.010" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_check_tensor_internal_cpu" time="0.009" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_clone_all_dtypes_and_devices_cpu" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_clone_not_memory_dense_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_clone_zero_stride_dim_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_complex_half_experimental_warning_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_constants_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_conv_transposed_large_cpu" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:1003: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_copy__cpu_bfloat16" time="0.006" file="test_torch.py">
+      <system-err>C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:5405: UserWarning: Casting complex values to real discards the imaginary part (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\native\Copy.cpp:276.)
+  t.copy_(src)
+      </system-err>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_copy__cpu_bool" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_copy__cpu_complex128" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_copy__cpu_complex32" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_copy__cpu_complex64" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_copy__cpu_float16" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_copy__cpu_float32" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_copy__cpu_float64" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_copy__cpu_int16" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_copy__cpu_int32" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_copy__cpu_int64" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_copy__cpu_int8" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_copy__cpu_uint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_copy_all_dtypes_and_devices_cpu" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_copy_math_view_cpu" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_copy_mem_overlap_cpu_float64" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_copy_transpose_math_view_cpu_complex64" time="0.008" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_copy_transpose_math_view_cpu_float32" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_copy_transpose_math_view_cpu_int64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_corrcoef_cpu_complex64" time="0.051" file="test_torch.py">
+      <system-err>C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:2072: UserWarning: cov(): degrees of freedom is &lt;= 0 (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\native\Correlation.cpp:117.)
+  res = torch.corrcoef(x)
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:518: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\core\_methods.py:184: RuntimeWarning: invalid value encountered in divide
+  ret = um.true_divide(
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:2846: RuntimeWarning: Degrees of freedom &lt;= 0 for slice
+  c = cov(x, y, rowvar, dtype=dtype)
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:2705: RuntimeWarning: divide by zero encountered in divide
+  c *= np.true_divide(1, fact)
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:2705: RuntimeWarning: invalid value encountered in multiply
+  c *= np.true_divide(1, fact)
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:2852: RuntimeWarning: invalid value encountered in divide
+  return c / c
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:2854: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:2855: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+      </system-err>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_corrcoef_cpu_float32" time="0.009" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_corrcoef_cpu_int32" time="0.017" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cov_cpu_complex64" time="0.098" file="test_torch.py">
+      <system-err>C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:2079: UserWarning: cov(): degrees of freedom is &lt;= 0 (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\native\Correlation.cpp:117.)
+  res = torch.cov(t, correction=correction, fweights=fweights, aweights=aweights)
+C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:2083: RuntimeWarning: Degrees of freedom &lt;= 0 for slice
+  ref = np.cov(t, ddof=correction, fweights=fweights, aweights=aweights)
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:551: RuntimeWarning: invalid value encountered in multiply
+  avg = avg_as_array = np.multiply(a, wgt,
+      </system-err>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cov_cpu_float32" time="0.059" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cov_cpu_int32" time="0.059" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cpp_warnings_have_python_context_cpu" time="0.476" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cublas_config_nondeterministic_alert_cpu" time="0.002" file="test_torch.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:1205: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cummax_cummin_cpu" time="0.010" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cummax_discontiguous_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cummin_discontiguous_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cumprod_cpu" time="0.008" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_cumsum_cpu" time="0.009" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_deepcopy_cpu_complex64" time="0.013" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_deepcopy_cpu_float32" time="0.014" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_deepcopy_scalar_cpu_complex64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_deepcopy_scalar_cpu_float32" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_device_guard_cpu" time="0.002" file="test_torch.py">
+      <skipped type="pytest.skip" message="fewer than 2 devices detected">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:4389: fewer than 2 devices detected</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_diff_cpu_bool" time="0.052" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_diff_cpu_complex128" time="0.069" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_diff_cpu_complex64" time="0.069" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_diff_cpu_float16" time="0.069" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_diff_cpu_float32" time="0.066" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_diff_cpu_float64" time="0.062" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_diff_cpu_int16" time="0.047" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_diff_cpu_int32" time="0.047" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_diff_cpu_int64" time="0.047" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_diff_cpu_int8" time="0.047" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_diff_cpu_uint8" time="0.047" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_diff_noncontig_cpu_bool" time="0.047" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_diff_noncontig_cpu_complex128" time="0.068" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_diff_noncontig_cpu_complex64" time="0.069" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_diff_noncontig_cpu_float16" time="0.068" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_diff_noncontig_cpu_float32" time="0.066" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_diff_noncontig_cpu_float64" time="0.063" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_diff_noncontig_cpu_int16" time="0.047" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_diff_noncontig_cpu_int32" time="0.048" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_diff_noncontig_cpu_int64" time="0.047" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_diff_noncontig_cpu_int8" time="0.047" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_diff_noncontig_cpu_uint8" time="0.048" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_dim_function_empty_cpu" time="0.018" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_discontiguous_out_cumsum_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_dist_cpu" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_dtypetensor_warnings_cpu" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:956: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_errors_index_copy_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_expected_failure_xla_cpu" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_exponential_cpu_bfloat16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_exponential_cpu_float16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_exponential_cpu_float32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_exponential_cpu_float64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_exponential_kstest_cpu_bfloat16" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_exponential_kstest_cpu_float16" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_exponential_kstest_cpu_float32" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_exponential_kstest_cpu_float64" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_exponential_no_zero_cpu_float16" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:2045: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_exponential_no_zero_cpu_float32" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:2045: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_gather_backward_deterministic_path_cpu" time="2.328" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_gather_backward_one_dim_cpu" time="2.323" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_geometric_cpu_bfloat16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_geometric_cpu_float16" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_geometric_cpu_float32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_geometric_cpu_float64" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_geometric_cpu_int16" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_geometric_cpu_int32" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_geometric_cpu_int64" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_geometric_cpu_int8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_geometric_cpu_uint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_geometric_kstest_cpu_bfloat16" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_geometric_kstest_cpu_float16" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_geometric_kstest_cpu_float32" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_geometric_kstest_cpu_float64" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_geometric_kstest_cpu_int16" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_geometric_kstest_cpu_int32" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_geometric_kstest_cpu_int64" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_geometric_kstest_cpu_int8" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_geometric_kstest_cpu_uint8" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_gradient_all_cpu_complex64" time="0.255" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_gradient_all_cpu_float32" time="0.254" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_gradient_all_cpu_int64" time="0.213" file="test_torch.py">
+      <system-err>C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1240: RuntimeWarning: divide by zero encountered in divide
+  a = -(dx2)/(dx1 * (dx1 + dx2))
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1241: RuntimeWarning: divide by zero encountered in divide
+  b = (dx2 - dx1) / (dx1 * dx2)
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1242: RuntimeWarning: divide by zero encountered in divide
+  c = dx1 / (dx2 * (dx1 + dx2))
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1248: RuntimeWarning: invalid value encountered in add
+  out[tuple(slice1)] = a * f[tuple(slice2)] + b * f[tuple(slice3)] + c * f[tuple(slice4)]
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1296: RuntimeWarning: divide by zero encountered in scalar divide
+  a = (dx2) / (dx1 * (dx1 + dx2))
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1297: RuntimeWarning: divide by zero encountered in scalar divide
+  b = - (dx2 + dx1) / (dx1 * dx2)
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1300: RuntimeWarning: invalid value encountered in scalar add
+  out[tuple(slice1)] = a * f[tuple(slice2)] + b * f[tuple(slice3)] + c * f[tuple(slice4)]
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1279: RuntimeWarning: divide by zero encountered in scalar divide
+  a = -(2. * dx1 + dx2)/(dx1 * (dx1 + dx2))
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1280: RuntimeWarning: divide by zero encountered in scalar divide
+  b = (dx1 + dx2) / (dx1 * dx2)
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1283: RuntimeWarning: invalid value encountered in add
+  out[tuple(slice1)] = a * f[tuple(slice2)] + b * f[tuple(slice3)] + c * f[tuple(slice4)]
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1300: RuntimeWarning: invalid value encountered in add
+  out[tuple(slice1)] = a * f[tuple(slice2)] + b * f[tuple(slice3)] + c * f[tuple(slice4)]
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1257: RuntimeWarning: divide by zero encountered in divide
+  out[tuple(slice1)] = (f[tuple(slice2)] - f[tuple(slice3)]) / dx_0
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1257: RuntimeWarning: invalid value encountered in divide
+  out[tuple(slice1)] = (f[tuple(slice2)] - f[tuple(slice3)]) / dx_0
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1248: RuntimeWarning: invalid value encountered in multiply
+  out[tuple(slice1)] = a * f[tuple(slice2)] + b * f[tuple(slice3)] + c * f[tuple(slice4)]
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1281: RuntimeWarning: divide by zero encountered in scalar divide
+  c = - dx1 / (dx2 * (dx1 + dx2))
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1283: RuntimeWarning: invalid value encountered in multiply
+  out[tuple(slice1)] = a * f[tuple(slice2)] + b * f[tuple(slice3)] + c * f[tuple(slice4)]
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1300: RuntimeWarning: invalid value encountered in multiply
+  out[tuple(slice1)] = a * f[tuple(slice2)] + b * f[tuple(slice3)] + c * f[tuple(slice4)]
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1298: RuntimeWarning: divide by zero encountered in scalar divide
+  c = (2. * dx2 + dx1) / (dx2 * (dx1 + dx2))
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1264: RuntimeWarning: divide by zero encountered in divide
+  out[tuple(slice1)] = (f[tuple(slice2)] - f[tuple(slice3)]) / dx_n
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1264: RuntimeWarning: invalid value encountered in divide
+  out[tuple(slice1)] = (f[tuple(slice2)] - f[tuple(slice3)]) / dx_n
+      </system-err>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_gradient_extreme_cases_cpu_complex64" time="0.096" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_gradient_extreme_cases_cpu_float32" time="0.125" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_gradient_extreme_cases_cpu_int64" time="0.060" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_gradient_type_promotion_cpu" time="0.118" file="test_torch.py">
+      <system-err>C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1236: ComplexWarning: Casting complex values to real discards the imaginary part
+  out[tuple(slice1)] = (f[tuple(slice4)] - f[tuple(slice2)]) / (2. * ax_dx)
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1257: ComplexWarning: Casting complex values to real discards the imaginary part
+  out[tuple(slice1)] = (f[tuple(slice2)] - f[tuple(slice3)]) / dx_0
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1264: ComplexWarning: Casting complex values to real discards the imaginary part
+  out[tuple(slice1)] = (f[tuple(slice2)] - f[tuple(slice3)]) / dx_n
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\torch\testing\_comparison.py:688: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\Users\radekbarton\Projects\pytorch\torch\csrc\utils\tensor_numpy.cpp:212.)
+  return torch.as_tensor(tensor_like)
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1283: ComplexWarning: Casting complex values to real discards the imaginary part
+  out[tuple(slice1)] = a * f[tuple(slice2)] + b * f[tuple(slice3)] + c * f[tuple(slice4)]
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1300: ComplexWarning: Casting complex values to real discards the imaginary part
+  out[tuple(slice1)] = a * f[tuple(slice2)] + b * f[tuple(slice3)] + c * f[tuple(slice4)]
+C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\numpy\lib\function_base.py:1248: ComplexWarning: Casting complex values to real discards the imaginary part
+  out[tuple(slice1)] = a * f[tuple(slice2)] + b * f[tuple(slice3)] + c * f[tuple(slice4)]
+      </system-err>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_hook_remove_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_add_deterministic_cpu" time="0.121" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_add_mem_overlap_cpu" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_cpu_bfloat16" time="0.017" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_cpu_bool" time="0.013" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_cpu_complex128" time="0.017" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_cpu_complex64" time="0.016" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_cpu_float16" time="0.018" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_cpu_float32" time="0.016" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_cpu_float64" time="0.016" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_cpu_int16" time="0.017" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_cpu_int32" time="0.012" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_cpu_int64" time="0.022" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_cpu_int8" time="0.035" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_cpu_uint8" time="0.027" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_deterministic_cpu" time="5.781" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_mem_overlap_cpu" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_scalars_cpu_bfloat16" time="0.007" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_scalars_cpu_bool" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_scalars_cpu_complex128" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_scalars_cpu_complex64" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_scalars_cpu_float16" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_scalars_cpu_float32" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_scalars_cpu_float64" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_scalars_cpu_int16" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_scalars_cpu_int32" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_scalars_cpu_int64" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_scalars_cpu_int8" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_copy_scalars_cpu_uint8" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_fill_cpu_bfloat16" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_fill_cpu_bool" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_fill_cpu_complex128" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_fill_cpu_complex64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_fill_cpu_float16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_fill_cpu_float32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_fill_cpu_float64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_fill_cpu_int16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_fill_cpu_int32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_fill_cpu_int64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_fill_cpu_int8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_fill_cpu_uint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_fill_mem_overlap_cpu" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_put_mem_overlap_cpu" time="0.007" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_put_non_accumulate_deterministic_cpu" time="0.007" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_amax_cpu_bfloat16" time="0.076" file="test_torch.py">
+      <system-err>C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:3153: UserWarning: index_reduce() is in beta and the API may change at any time. (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\native\TensorAdvancedIndexing.cpp:1110.)
+  dest.index_reduce_(dim, idx, src, reduce, include_self=include_self)
+      </system-err>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_amax_cpu_float16" time="0.084" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_amax_cpu_float32" time="0.080" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_amax_cpu_float64" time="0.090" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_amax_cpu_int16" time="0.161" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_amax_cpu_int32" time="0.111" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_amax_cpu_int64" time="0.061" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_amax_cpu_int8" time="0.083" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_amax_cpu_uint8" time="0.073" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_amin_cpu_bfloat16" time="0.084" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_amin_cpu_float16" time="0.118" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_amin_cpu_float32" time="0.134" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_amin_cpu_float64" time="0.102" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_amin_cpu_int16" time="0.081" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_amin_cpu_int32" time="0.071" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_amin_cpu_int64" time="0.088" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_amin_cpu_int8" time="0.100" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_amin_cpu_uint8" time="0.120" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_mean_cpu_bfloat16" time="0.092" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_mean_cpu_float16" time="0.115" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_mean_cpu_float32" time="0.113" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_mean_cpu_float64" time="0.134" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_mean_cpu_int16" time="0.117" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_mean_cpu_int32" time="0.082" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_mean_cpu_int64" time="0.078" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_mean_cpu_int8" time="0.096" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_mean_cpu_uint8" time="0.097" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_prod_cpu_bfloat16" time="0.118" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_prod_cpu_float16" time="0.129" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_prod_cpu_float32" time="0.101" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_prod_cpu_float64" time="0.094" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_prod_cpu_int16" time="0.059" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_prod_cpu_int32" time="0.085" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_prod_cpu_int64" time="0.156" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_prod_cpu_int8" time="0.066" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_reduce_reduce_prod_cpu_uint8" time="0.071" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_select_cpu_bfloat16" time="0.010" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_select_cpu_bool" time="0.007" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_select_cpu_complex128" time="0.009" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_select_cpu_complex64" time="0.010" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_select_cpu_float16" time="0.009" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_select_cpu_float32" time="0.009" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_select_cpu_float64" time="0.007" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_select_cpu_int16" time="0.007" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_select_cpu_int32" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_select_cpu_int64" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_select_cpu_int8" time="0.007" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_index_select_cpu_uint8" time="0.007" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_invalid_shapes_grid_sampler_cpu" time="0.007" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_is_set_to_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_is_signed_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_item_cpu_bfloat16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_item_cpu_bool" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_item_cpu_complex128" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_item_cpu_complex32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_item_cpu_complex64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_item_cpu_float16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_item_cpu_float32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_item_cpu_float64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_item_cpu_int16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_item_cpu_int32" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_item_cpu_int64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_item_cpu_int8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_item_cpu_uint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_large_cumprod_cpu_float16" time="0.002" file="test_torch.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:2885: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_large_cumsum_cpu_float16" time="0.002" file="test_torch.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:2871: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_log_normal_cpu_bfloat16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_log_normal_cpu_float16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_log_normal_cpu_float32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_log_normal_cpu_float64" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_logcumsumexp_cpu" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_lognormal_kstest_cpu_bfloat16" time="0.011" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_lognormal_kstest_cpu_float16" time="0.013" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_lognormal_kstest_cpu_float32" time="0.010" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_lognormal_kstest_cpu_float64" time="0.012" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_bool_tensor_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_cpu_bfloat16_bool" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_cpu_bfloat16_uint8" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_cpu_bool_bool" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_cpu_bool_uint8" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_cpu_complex128_bool" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_cpu_complex128_uint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_cpu_complex64_bool" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_cpu_complex64_uint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_cpu_float16_bool" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_cpu_float16_uint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_cpu_float32_bool" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_cpu_float32_uint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_cpu_float64_bool" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_cpu_float64_uint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_cpu_int16_bool" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_cpu_int16_uint8" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_cpu_int32_bool" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_cpu_int32_uint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_cpu_int64_bool" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_cpu_int64_uint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_cpu_int8_bool" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_cpu_int8_uint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_cpu_uint8_bool" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_cpu_uint8_uint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_fill_mem_overlap_cpu" time="0.008" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_scatter_bool_tensor_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_scatter_cpu_bfloat16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_scatter_cpu_complex128" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_scatter_cpu_complex64" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_scatter_cpu_float16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_scatter_cpu_float32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_scatter_cpu_float64" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_scatter_cpu_int16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_scatter_cpu_int32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_scatter_cpu_int64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_scatter_cpu_int8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_scatter_cpu_uint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_scatter_inplace_noncontiguous_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_scatter_large_tensor_cpu" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:3747: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_scatter_mem_overlap_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_select_cpu_bfloat16" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_select_cpu_bool" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_select_cpu_complex128" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_select_cpu_complex64" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_select_cpu_float16" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_select_cpu_float32" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_select_cpu_float64" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_select_cpu_int16" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_select_cpu_int32" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_select_cpu_int64" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_select_cpu_int8" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_select_cpu_uint8" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_masked_select_discontiguous_cpu" time="0.008" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_memory_format_clone_cpu" time="0.016" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_memory_format_consistency_cpu" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_memory_format_cpu_and_cuda_ops_cpu" time="0.002" file="test_torch.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:5166: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_memory_format_empty_like_cpu" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_memory_format_factory_like_functions_preserve_cpu" time="0.262" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_memory_format_operators_cpu" time="0.313" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_memory_format_preserved_after_permute_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_memory_format_propagation_rules_cpu" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_memory_format_to_cpu" time="0.017" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_memory_format_type_cpu" time="0.017" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_memory_format_type_shortcuts_cpu" time="0.205" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_module_share_memory_cpu" time="0.002" file="test_torch.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:372: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_multinomial_cpu_cpu_bfloat16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_multinomial_cpu_cpu_float32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_multinomial_cpu_cpu_float64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_multinomial_cpu_float32" time="0.050" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_multinomial_cpu_float64" time="0.032" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_multinomial_deterministic_cpu_float16" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:4966: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_multinomial_deterministic_cpu_float32" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:4966: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_multinomial_deterministic_cpu_float64" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:4966: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_multinomial_device_constrain_cpu" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:4369: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_multinomial_empty_w_replacement_cpu" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_multinomial_empty_wo_replacement_cpu" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_multinomial_gpu_device_constrain_cpu" time="0.002" file="test_torch.py">
+      <skipped type="pytest.skip" message="fewer than 2 devices detected">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:4378: fewer than 2 devices detected</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_multinomial_rng_state_advance_cpu_float32" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="test is slow; run with PYTORCH_TEST_WITH_SLOW to enable test">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:4988: test is slow; run with PYTORCH_TEST_WITH_SLOW to enable test</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_narrow_copy_non_contiguous_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_narrow_empty_cpu" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_AdaptiveAvgPool2d_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_AdaptiveAvgPool3d_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_AdaptiveMaxPool2d_cpu" time="0.010" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_AvgPool3d_cpu" time="0.020" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_CTCLoss_cpu" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_EmbeddingBag_max_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_FractionalMaxPool2d_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_FractionalMaxPool3d_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_MaxPool3d_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_MaxUnpool1d_cpu_float16" time="0.002" file="test_torch.py">
+      <skipped type="pytest.skip" message="float16 not implemented on CPU">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:1369: float16 not implemented on CPU</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_MaxUnpool1d_cpu_float32" time="0.010" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_MaxUnpool1d_cpu_float64" time="0.008" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_MaxUnpool2d_cpu_float16" time="0.002" file="test_torch.py">
+      <skipped type="pytest.skip" message="float16 not implemented on CPU">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:1383: float16 not implemented on CPU</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_MaxUnpool2d_cpu_float32" time="0.008" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_MaxUnpool2d_cpu_float64" time="0.008" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_MaxUnpool3d_cpu_float16" time="0.002" file="test_torch.py">
+      <skipped type="pytest.skip" message="float16 not implemented on CPU">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:1397: float16 not implemented on CPU</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_MaxUnpool3d_cpu_float32" time="0.008" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_MaxUnpool3d_cpu_float64" time="0.008" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_NLLLoss_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_ReflectionPad1d_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_ReflectionPad2d_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_ReflectionPad3d_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_ReplicationPad1d_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_ReplicationPad2d_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_ReplicationPad3d_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_bincount_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_cumsum_cpu_bool" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_cumsum_cpu_complex128" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_cumsum_cpu_complex64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_cumsum_cpu_float32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_cumsum_cpu_float64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_cumsum_cpu_int16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_cumsum_cpu_int32" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_cumsum_cpu_int64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_cumsum_cpu_int8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_cumsum_cpu_uint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_grid_sample_2d_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_grid_sample_3d_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_histc_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_interpolate_bicubic_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_interpolate_bilinear_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_interpolate_linear_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_interpolate_trilinear_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_kthvalue_cpu_float64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_median_cpu_float64" time="0.003" file="test_torch.py">
+      <system-err>C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:1778: UserWarning: An output with one or more elements was resized since it had shape [10], which does not match the required output shape []. This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\native\Resize.cpp:33.)
+  torch.median(a, 0, out=(result, indices))
+      </system-err>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_put_accumulate_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nondeterministic_alert_put_cpu" time="0.012" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_normal_kstest_cpu_float16" time="0.009" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_normal_kstest_cpu_float32" time="0.009" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_normal_kstest_cpu_float64" time="0.007" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_nullary_op_mem_overlap_cpu" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_pairwise_distance_empty_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_pdist_empty_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_pdist_norm_large_cpu" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:4087: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_pickle_gradscaler_cpu" time="0.012" file="test_torch.py">
+      <system-err>C:\Users\radekbarton\AppData\Local\Programs\Python\Python311-arm64\Lib\site-packages\torch\cuda\amp\grad_scaler.py:120: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn("torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.")
+      </system-err>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_pin_memory_from_constructor_cpu" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:4829: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_put_accumulate_cpu_bfloat16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_put_accumulate_cpu_complex128" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_put_accumulate_cpu_complex64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_put_accumulate_cpu_float16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_put_accumulate_cpu_float32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_put_accumulate_cpu_float64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_put_accumulate_cpu_int16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_put_accumulate_cpu_int32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_put_accumulate_cpu_int64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_put_accumulate_cpu_int8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_put_accumulate_cpu_uint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_put_cpu_bfloat16" time="0.052" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_put_cpu_complex128" time="0.060" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_put_cpu_complex64" time="0.110" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_put_cpu_float16" time="0.096" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_put_cpu_float32" time="0.054" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_put_cpu_float64" time="0.050" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_put_cpu_int16" time="0.036" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_put_cpu_int32" time="0.052" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_put_cpu_int64" time="0.038" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_put_cpu_int8" time="0.035" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_put_cpu_uint8" time="0.052" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_put_empty_cpu" time="0.007" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_put_mem_overlap_cpu" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_repeat_interleave_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scalar_check_cpu" time="0.024" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_add_bool_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_add_non_unique_index_cpu" time="0.042" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_add_one_dim_deterministic_cpu" time="2.426" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_add_to_large_input_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_bool_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_mem_overlap_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_multiply_unsupported_dtypes_cpu_complex128" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:3633: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_multiply_unsupported_dtypes_cpu_complex64" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:3633: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_non_unique_index_cpu_bfloat16" time="0.006" file="test_torch.py">
+      <system-err>C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:3630: UserWarning: The reduce argument of torch.scatter with Tensor src is deprecated and will be removed in a future PyTorch release. Use torch.scatter_reduce instead for more reduction options. (Triggered internally at C:\Users\radekbarton\Projects\pytorch\aten\src\ATen\native\TensorAdvancedIndexing.cpp:227.)
+  input.scatter_(0, index, src, reduce=operation)
+      </system-err>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_non_unique_index_cpu_bool" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_non_unique_index_cpu_complex128" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_non_unique_index_cpu_complex64" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_non_unique_index_cpu_float16" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_non_unique_index_cpu_float32" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_non_unique_index_cpu_float64" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_non_unique_index_cpu_int16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_non_unique_index_cpu_int32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_non_unique_index_cpu_int64" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_non_unique_index_cpu_int8" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_non_unique_index_cpu_uint8" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_operations_to_large_input_cpu_bfloat16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_operations_to_large_input_cpu_bool" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_operations_to_large_input_cpu_complex128" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_operations_to_large_input_cpu_complex64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_operations_to_large_input_cpu_float16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_operations_to_large_input_cpu_float32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_operations_to_large_input_cpu_float64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_operations_to_large_input_cpu_int16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_operations_to_large_input_cpu_int32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_operations_to_large_input_cpu_int64" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_operations_to_large_input_cpu_int8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_operations_to_large_input_cpu_uint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_scalar_cpu_bfloat16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_scalar_cpu_bool" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_scalar_cpu_complex128" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_scalar_cpu_complex64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_scalar_cpu_float16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_scalar_cpu_float32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_scalar_cpu_float64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_scalar_cpu_int16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_scalar_cpu_int32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_scalar_cpu_int64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_scalar_cpu_int8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_reduce_scalar_cpu_uint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_to_large_input_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_scatter_zero_size_index_cpu" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_serialization_cpu" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:4498: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_set_default_tensor_type_warnings_cpu" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_set_storage_cpu_bfloat16" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_set_storage_cpu_bool" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_set_storage_cpu_complex128" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_set_storage_cpu_complex64" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_set_storage_cpu_float16" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_set_storage_cpu_float32" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_set_storage_cpu_float64" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_set_storage_cpu_int16" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_set_storage_cpu_int32" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_set_storage_cpu_int64" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_set_storage_cpu_int8" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_set_storage_cpu_uint8" time="0.005" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_shift_mem_overlap_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_skip_xla_cpu" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_all_devices_cpu" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:4864: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_cpu_bool" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_cpu_complex128" time="0.016" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_cpu_complex64" time="0.012" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_cpu_float32" time="0.010" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_cpu_float64" time="0.011" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_cpu_int16" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_cpu_int32" time="0.007" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_cpu_int64" time="0.009" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_cpu_int8" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_cpu_uint8" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_meta_errors_cpu_bfloat16" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_meta_errors_cpu_bool" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_meta_errors_cpu_complex128" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_meta_errors_cpu_complex64" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_meta_errors_cpu_float16" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_meta_errors_cpu_float32" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_meta_errors_cpu_float64" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_meta_errors_cpu_int16" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_meta_errors_cpu_int32" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_meta_errors_cpu_int64" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_meta_errors_cpu_int8" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_meta_errors_cpu_uint8" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_meta_from_tensor_cpu_bfloat16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_meta_from_tensor_cpu_bool" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_meta_from_tensor_cpu_complex128" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_meta_from_tensor_cpu_complex64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_meta_from_tensor_cpu_float16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_meta_from_tensor_cpu_float32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_meta_from_tensor_cpu_float64" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_meta_from_tensor_cpu_int16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_meta_from_tensor_cpu_int32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_meta_from_tensor_cpu_int64" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_meta_from_tensor_cpu_int8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_meta_from_tensor_cpu_uint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_setitem_cpu_bool" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_setitem_cpu_complex128" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_setitem_cpu_complex64" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_setitem_cpu_float32" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_setitem_cpu_float64" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_setitem_cpu_int16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_setitem_cpu_int32" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_setitem_cpu_int64" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_setitem_cpu_int8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_setitem_cpu_qint32" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_setitem_cpu_qint8" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_setitem_cpu_quint4x2" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_setitem_cpu_quint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_storage_setitem_cpu_uint8" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_strides_propagation_cpu" time="0.110" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_sync_warning_cpu" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="Only runs on cuda">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:1866: Only runs on cuda</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_take_cpu_bfloat16" time="0.010" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_take_cpu_bool" time="0.010" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_take_cpu_complex128" time="0.013" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_take_cpu_complex64" time="0.014" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_take_cpu_float16" time="0.012" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_take_cpu_float32" time="0.012" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_take_cpu_float64" time="0.012" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_take_cpu_int16" time="0.009" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_take_cpu_int32" time="0.010" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_take_cpu_int64" time="0.009" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_take_cpu_int8" time="0.008" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_take_cpu_uint8" time="0.010" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_take_empty_cpu" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_from_storage_cpu_bfloat16" time="0.009" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_from_storage_cpu_bool" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_from_storage_cpu_complex128" time="0.009" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_from_storage_cpu_complex64" time="0.009" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_from_storage_cpu_float16" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_from_storage_cpu_float32" time="0.007" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_from_storage_cpu_float64" time="0.009" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_from_storage_cpu_int16" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_from_storage_cpu_int32" time="0.008" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_from_storage_cpu_int64" time="0.009" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_from_storage_cpu_int8" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_from_storage_cpu_uint8" time="0.006" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_set_errors_multigpu_cpu" time="0.001" file="test_torch.py">
+      <skipped type="pytest.skip" message="fewer than 2 devices detected">C:\Users\radekbarton\Projects\pytorch\test\test_torch.py:4485: fewer than 2 devices detected</skipped>
+    </testcase>
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_shape_empty_cpu" time="0.007" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_storage_type_cpu_bfloat16" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_storage_type_cpu_bool" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_storage_type_cpu_complex128" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_storage_type_cpu_complex64" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_storage_type_cpu_float16" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_storage_type_cpu_float32" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_storage_type_cpu_float64" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_storage_type_cpu_int16" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_storage_type_cpu_int32" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_storage_type_cpu_int64" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_storage_type_cpu_int8" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_tensor_storage_type_cpu_uint8" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_ternary_op_mem_overlap_cpu_float64" time="0.015" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_typed_storage_meta_cpu_bfloat16" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_typed_storage_meta_cpu_bool" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_typed_storage_meta_cpu_complex128" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_typed_storage_meta_cpu_complex64" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_typed_storage_meta_cpu_float16" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_typed_storage_meta_cpu_float32" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_typed_storage_meta_cpu_float64" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_typed_storage_meta_cpu_int16" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_typed_storage_meta_cpu_int32" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_typed_storage_meta_cpu_int64" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_typed_storage_meta_cpu_int8" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_typed_storage_meta_cpu_uint8" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_unfold_all_devices_and_dtypes_cpu" time="0.003" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_unfold_scalars_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_uniform_kstest_cpu_bfloat16" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_uniform_kstest_cpu_float16" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_uniform_kstest_cpu_float32" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_uniform_kstest_cpu_float64" time="0.004" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_untyped_storage_meta_cpu" time="0.002" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_warn_always_caught_cpu" time="0.001" file="test_torch.py" />
+    <testcase classname="TestTorchDeviceTypeCPU" name="test_where_scalar_handcrafted_values_cpu" time="0.022" file="test_torch.py" />
+  </testsuite>
+</testsuites>
